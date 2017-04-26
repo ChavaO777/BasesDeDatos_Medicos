@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->increments('id');
             $table->integer('patient_id')->unsigned();
             $table->integer('doctor_id')->unsigned();
-            $table->date('date')->unique();
+            $table->date('date');
             $table->integer('rating');
             $table->string('text', 1000);
             $table->string('reply', 1000);

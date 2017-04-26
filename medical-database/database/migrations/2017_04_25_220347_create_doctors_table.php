@@ -15,6 +15,7 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('medical_id', 20)->unique(); //cedula
             $table->integer('specialty_id')->unsigned();
             $table->string('first_name', 50);
             $table->string('last_name', 50);
