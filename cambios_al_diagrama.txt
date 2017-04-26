@@ -1,0 +1,6 @@
+Martes 24 de abril de 2017
+
+1. Cambiamos "Speciality" por "Specialty"
+2. Agregamos el atributo "code" a "specialties".
+3. Agregamos "medical_id" a "doctors"; esa es la cédula profesional, mientras que "id" es el id autogenerado por Laravel.
+4. Quitamos el "unique" de date en la migración "reviews".

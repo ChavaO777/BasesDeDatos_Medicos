@@ -3,3 +3,26 @@
 1) Specified key was too long error
 
 https://laravel-news.com/laravel-5-4-key-too-long-error
+
+2) Generating key
+
+php artisan key:generate
+
+3) Error en la referencia foránea.
+
+Detalles del error:
+
+[Illuminate\Database\QueryException]
+  SQLSTATE[HY000]: General error: 1005 Can't create table `project`.`#sql-c74_17` (errno: 150 "Foreign key constraint
+   is incorrectly formed") (SQL: alter table `cities` add constraint `cities_state_id_foreign` foreign key (`state_id
+  `) references `states` (`id`))
+
+
+
+  [PDOException]
+  SQLSTATE[HY000]: General error: 1005 Can't create table `project`.`#sql-c74_17` (errno: 150 "Foreign key constraint
+   is incorrectly formed")
+
+   Solución:
+
+   Poner las referencias foráneas como unsigned integers.
