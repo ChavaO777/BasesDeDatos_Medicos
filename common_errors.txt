@@ -26,3 +26,25 @@ Detalles del error:
    Solución:
 
    Poner las referencias foráneas como unsigned integers.
+
+ 5) Error de bindShared() vs. singleton()
+
+   [Symfony\Component\Debug\Exception\FatalThrowableError]
+  Call to undefined method Illuminate\Foundation\Application::bindShared()
+
+  Solución:
+
+  	Hello,
+	bindShared() have been replaced with singleton()
+	It is located here: /path-to-your-project/vendor/illuminate/html/HtmlServiceProvider.php
+	change on line no : 36 and 49
+
+6) No existe el seeder
+
+	[ReflectionException]
+  	Class StatesTableSeeder does not exist
+
+  	Solución:
+
+  		composer dump-autoload
+  		php artisan db:seed
