@@ -12,6 +12,7 @@ class PatientsTableSeeder extends Seeder
     public function run()
     {
         DB::table('patients')->insert([
+            'user_name' => 'juanito93',
         	'first_name' => 'Juan',
         	'last_name' => 'Perez',
         	'password' => 'hola123',
@@ -20,6 +21,7 @@ class PatientsTableSeeder extends Seeder
         ]);
 
         DB::table('patients')->insert([
+            'user_name' => 'dani24',
         	'first_name' => 'Daniela',
         	'last_name' => 'Lopez',
         	'password' => 'adios123',
