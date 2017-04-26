@@ -18,8 +18,12 @@ Route::get('/', function () {
 
 // Route::get('/search_doctor/{doctor_id}', function($doctor_id)){
 
-Route::get('/search_doctor/1', function() {
+Route::get('/search_doctor/', function() {
 	
-	$doctor = App\Doctor::where('id', 1)->get();
-	return view('docProfile', $doctor);
+	$doctorA = App\Doctor::where('id', 2)->first(); //Fake value 1... The function must receive the doctor's id!!
+	$doctor_reviewsA = App\Review::where('doctor_id', 2)->first();
+		
+	// return dd($doctorA);
+
+	return view('docProfile', ['doctor' => $doctorA , 'doctor_reviews' => $doctor_reviewsA]);
 });

@@ -1,7 +1,7 @@
 <html>
 
 	<head>
-		<title>B&uacute;squeda doctor</title>
+		<title>B&uacute;squeda de doctor</title>
 		<link rel="stylesheet" href="/css/docStyles.css">
 	</head>
 
