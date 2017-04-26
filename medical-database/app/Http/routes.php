@@ -14,8 +14,9 @@ Route::get('/', function () {
 /**
  * Add A New Task
  */
-Route::post('/', function (Request $request) {
+Route::post('/hola', function (Request $request) {
     //
+    return "HOLA A TODOS";
 });
 
 /**
