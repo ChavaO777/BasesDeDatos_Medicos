@@ -1,0 +1,132 @@
+/*Scrollbar style*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px;
+    color: #2A948D;
+    background-color: #2A948D;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px; 
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+
+/*Box with doctor name style*/
+.titleBox {
+
+	background-color: #FFDB7C;
+
+}
+
+/*Box with doctor information style*/
+.boxed {
+	background-color: #FFFFFF;
+	height: 100%;
+	position: relative;
+	top: -2.5%;
+}
+
+/*Column 1 style*/
+.titleTable {
+	/*About background*/
+	background-color: #2A948D;
+	border-color: #FFFFFF;
+	border: 1px;
+	position: relative;
+	width: 25%;
+	top: 15%;
+	left: 50%;
+
+	/*About text*/
+	color: #FFFFFF;
+	font-family: OratorStd;
+	font-size: 120%;
+	text-align: center;
+}
+
+/*Column 2 style*/
+.infoTable {
+	/*About background*/
+	background-color: #BDBDBD;
+	border-color: #FFFFFF;
+	border: 1px;
+	position: relative;
+	width: 25%;
+	top: 15%;
+	left: 50%;
+
+	/*About text*/
+	color: #000000;
+	font-family: OratorStd;
+	font-size: 120%;
+	text-align: center;
+}
+
+
+.docProfile {
+
+	background-color: #D90404;
+	border: 10px;
+	border-color: #D90404;
+	width: 79%;
+	height:5%;
+	position: relative;
+	left: 10%;
+	cursor: pointer;
+
+	color: #FFFFFF;
+	font-family: OratorStd;
+	font-size: 100%;
+	text-align: center;
+}
+
+/*Sign up button*/
+.button1{
+
+	background-color: #2A948D;
+	border: 1px;
+	cursor: pointer;
+    border-radius: 80px;
+	font-size: 120%;
+	font-family: OratorStd;
+	color: #FFFFFF;
+    height: 50px;
+    width: 200px;
+
+    position:absolute;
+    top:125%;
+    left:42%;
+}
+
+/*Body style*/
+body {
+
+	background-color: #FFEBAB;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+/*title style: doctor name*/
+h1 {
+
+	color: #D90404;
+	font-family: Norwester;
+	font-size: 400%;
+	text-align: center;
+}
+
+/*subtitle style: reseñas*/
+h2 {
+
+	color: #D90404;
+	font-family: OratorStd;
+	font-size: 200%;
+	text-align: center;
+}
