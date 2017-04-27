@@ -2,13 +2,13 @@
 	
 	<head>
 		<title>B&uacute;squeda de hospital</title>
-		<link rel="stylesheet" href="hospStyles.css">
+		<link rel="stylesheet" href="/css/hospStyles.css">
     </head>
 
     <body>
     	<div class="boxed">
-    		<h1>Buscando hospital</h1>
-    		<h2>Resultados de b&uacute;squeda</h2>
+    		<h1>Buscando un hospital</h1>
+    		<h2>Resultados de la b&uacute;squeda</h2>
     	</div>
 
     	<div class="boxedInside">

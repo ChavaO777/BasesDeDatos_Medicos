@@ -59,5 +59,5 @@ Route::get('/show_hospital/', function() {
 
 Route::get('/search_hospital/', function() {
 
-
+	return view('busquedaHosp');
 });
