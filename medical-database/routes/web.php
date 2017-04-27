@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::get('/search_doctor/', function() {
 	
-	$doctor = App\Doctor::where('id', 2)->first(); //Fake value 1... The function must receive the doctor's id!!
-	$tota_doctor_reviews = App\Review::where('doctor_id', 2);
+	$doctor = App\Doctor::where('id', 1)->first(); //Fake value 1... The function must receive the doctor's id!!
+	$total_doctor_reviews = App\Review::where('doctor_id', 1);
 		
 	// return dd($doctorA);
 
@@ -31,11 +31,26 @@ Route::get('/search_doctor/', function() {
 // Route::get('/search_hospital/{hospital_id}', function($hospital_id) {
 Route::get('/search_hospital/', function() {
 
-	$hospital = App\Hospital::where('id', 1)->first(); //Fake value 1... The function must receive the hospital's id!!
-	$total_hospital_office = App\Office::where('hospital_id', 1);
-	$total_doctors_offices = App\Doctor_Office::whereIn('office_id', $total_hospital_office -> 'id');
+	 $hospital = App\Hospital::where('id', 1)->first(); //Fake value 1... The function must receive the hospital's id!!
 
-	$total_doctors = App\Doctor::whereIn('id', $total_doctors_offices->'doctor_id');
+	$total_doctors = DB::table('hospitals')
+			->select('hospitals.address_id', 'hospitals.id')
+			->where('hospitals.id', '=', 1)
+			->join('offices', 'hospitals.id', '=', 'offices.hospital_id')
+			->join('doctors_offices', 'offices.id', '=', 'doctors_offices.id')
+			->join('doctors', 'doctors.id', '=', 'doctors_offices.id')
+			->join('addresses', 'addresses.id', '=', 'offices.address_id')
+			->select('doctors.first_name', 'doctors.last_name', 'addresses.id')
+			->get();
 
-	return view('hospProfile', ['hospital' => $hospital, 'total_doctors' => $total_doctors]);
+	$address = DB::table('hospitals')
+				->select('hospitals.address_id', 'hospitals.id')
+				->where('hospitals.id', '=', 1)
+				->join('addresses', 'hospitals.address_id', '=', 'addresses.id')
+				->select('addresses.street')
+				->first();
+
+	// return dd($total_doctors);
+
+	return view('hospProfile', ['hospital' => $hospital, 'total_doctors' => $total_doctors, 'address' => $address]);
 });

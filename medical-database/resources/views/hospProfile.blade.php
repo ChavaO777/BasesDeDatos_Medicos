@@ -23,7 +23,6 @@
 				</tr>
 				<tr>
 					<td class="titleTable">Ubicaci&oacute;n</td>
-					$address = App\Address::where('id', {{ $hospital->address_id}})->first();
 					<td class="infoTable">{{ $address->street }}</td>
 				</tr>
 			</table>
@@ -33,12 +32,12 @@
 			<br>
 			<br>
 			<h2>Doctores</h2>
-			<button class="docProfile">Ulises Castro</button>
-			<button class="docProfile">Carmen Jimenez</button>
-			<button class="docProfile">Ra&uacute;l P&eacute;rez</button>
-			<button class="docProfile">Paulina G&oacute;nzales</button>
-			<button class="docProfile">Pedro de J&eacute;sus &Aacute;lvarez</button>
 
+			@foreach($total_doctors as $doctor)
+
+			<button class="docProfile"> Dr(a). {{ $doctor->first_name }} {{ $doctor->last_name }}  </button>
+			@endforeach
+			
 		</div>
 
 		<center><button class="button1">Iniciar sesi&oacute;n</button></center>
