@@ -20,9 +20,9 @@ Route::get('/', function () {
 
 Route::get('/show_doctor/', function() {
 		
-	$doctor_id = 1;	
+	$doctor_id = 2;	
 
-	$doctor = App\Doctor::where('id', $doctor_id)->first(); //Fake value 1... The function must receive the doctor's id!!
+	$doctor = App\Doctor::where('id', $doctor_id)->first(); 
 	$total_doctor_reviews = App\Review::where('doctor_id', $doctor_id);
 		
 	$doctor_specialty = App\Specialty::where('id', $doctor->specialty_id)->first();
@@ -30,8 +30,8 @@ Route::get('/show_doctor/', function() {
 	return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty]);
 });
 
-// Route::get('/search_hospital/{hospital_id}', function($hospital_id) {
-Route::get('/search_hospital/', function() {
+// Route::get('/show_hospital/{hospital_id}', function($hospital_id) {
+Route::get('/show_hospital/', function() {
 
 	$hospital_id = 2;
 
@@ -55,4 +55,9 @@ Route::get('/search_hospital/', function() {
 		->first();
 
 	return view('hospProfile', ['hospital' => $hospital, 'total_doctors' => $total_doctors, 'address' => $address]);
+});
+
+Route::get('/search_hospital/', function() {
+
+
 });
