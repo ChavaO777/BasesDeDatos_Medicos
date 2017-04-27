@@ -32,11 +32,11 @@
 				</tr>
 				<tr>
 					<td class="titleTable">Especialidad</td>
-					<td class="infoTable">{{ $doctor->specialty }}</td>
+					<td class="infoTable">{{ $specialty->name }}</td>
 				</tr>
 				<tr>
 					<td class="titleTable">Costo por consulta</td>
-					<td class="infoTable">{{ $doctor->consultation_cost }}</td>
+					<td class="infoTable">${{ $doctor->consultation_cost }}</td>
 				</tr>
 			</table>
 

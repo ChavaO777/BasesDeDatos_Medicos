@@ -23,8 +23,9 @@
 				</tr>
 				<tr>
 					<td class="titleTable">Ubicaci&oacute;n</td>
-					<td class="infoTable">{{ $address->street }}</td>
+					<td class="infoTable">Calle {{ $address->street}} #{{ $address->number}} Col. {{ $address->suburb}}</td>
 				</tr>
+
 			</table>
 
 			<br>
@@ -37,7 +38,7 @@
 
 			<button class="docProfile"> Dr(a). {{ $doctor->first_name }} {{ $doctor->last_name }}  </button>
 			@endforeach
-			
+
 		</div>
 
 		<center><button class="button1">Iniciar sesi&oacute;n</button></center>
