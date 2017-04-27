@@ -16,9 +16,9 @@ Route::get('/', function () {
     return view('all_doctors');
 });
 
-// Route::get('/search_doctor/{doctor_id}', function($doctor_id) {
+// Route::get('/show_doctor/{doctor_id}', function($doctor_id) {
 
-Route::get('/search_doctor/', function() {
+Route::get('/show_doctor/', function() {
 		
 	$doctor_id = 1;	
 
