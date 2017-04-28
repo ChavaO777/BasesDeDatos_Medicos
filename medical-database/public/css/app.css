@@ -1,6 +1,83 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 /**
+* Center elements log in template
+*/
+.col-md-6{
+
+	text-align: center;
+
+}
+
+/**
+* White background behind red title in log in template
+*/
+.panel-heading {
+
+	background-color: #FFFFFF;
+}
+
+/**
+* White background behind e-mail and password in log in template
+*/
+.panel-body {
+
+	background-color: #FFFFFF;
+}
+
+.form-horizontal {
+
+	background-color: #028E0C;
+} 
+
+.form-group {
+
+	text-align: center;
+}
+
+/**
+* e-mail elements in log in template
+*/
+[type="email"]{
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 150%;
+	color: #BDBDBD;
+	text-align: center;
+
+	border-radius: 80px;
+	border: 3px;
+	border-color: #2A948D;
+	width: 25%;
+}
+
+/**
+* password elements in log in template
+*/
+[type="password"]{
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 150%;
+	color: #BDBDBD;
+	text-align: center;
+	border-radius: 80px;
+	border: 3px;
+	border-color: #2A948D;
+	width: 25%;
+
+}
+
+[type="checkbox"] {
+	position: absolute;
+	left: 540px;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size: 150%;
+	color: #BDBDBD;
+}
+
+
+/**
 * body style
 */
 body {
@@ -12,7 +89,7 @@ body {
 
 
 /**
-* Titles style
+* Titles style: red color;
 */
 h1 {
 
@@ -23,12 +100,49 @@ h1 {
 }
 
 /**
-* Subtitles style
+* Subtitles style: gray color;
 */
 h2 {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 250%;
+	color: #BDBDBD;
+	text-align: center;
+}
+
+/**
+* Subtitles style: green style;
+*/
+h3 {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 250%;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/**
+* Body text style: gray text;
+*/
+h4 {
 
 	font-family: 'Dosis', sans-serif;
 	font-size: 150%;
 	color: #BDBDBD;
 	text-align: center;
+}
+
+/**
+* Body text style: green text;
+*/
+h5 {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 150%;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+h6 {
+	background-color: #FFFFFF;
 }
