@@ -3,6 +3,12 @@
     <head>
         <title>Pagina de inicio</title>
         <link rel="stylesheet" href="/css/styles.css">
+
+        <!-- Title font -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        
+        <!-- Subtitles font -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </head>
 
     <body>
@@ -10,7 +16,7 @@
         <br>
 
         <div class="boxed">
-            <h1><center>Base de datos de servicios medicos</h1></center>
+            <h1><center>Base de datos de servicios m&eacute;dicos</h1></center>
 
             <br>
 
@@ -52,7 +58,7 @@
             <option value="hospitalName">Nombre</option>
         </select>
         <br>
-        <input type="text" id="search" value="Ingresa tu b&uacute;squeda">
+        <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
         <button class="button3">Buscar</button>
 
 
