@@ -18,19 +18,8 @@ Route::get('/', function () {
 
 // Route::get('/show_doctor/{doctor_id}', function($doctor_id) {
 
-Route::get('/show_doctor/', function() {
-		
-	$doctor_id = 2;	
+Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
 
-	$doctor = App\Doctor::where('id', $doctor_id)->first(); 
-	$total_doctor_reviews = App\Review::where('doctor_id', $doctor_id);
-		
-	$doctor_specialty = App\Specialty::where('id', $doctor->specialty_id)->first();
-
-	return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty]);
-});
-
-// Route::get('/show_hospital/{hospital_id}', function($hospital_id) {
 Route::get('/show_hospital/{hospital_id}', "HospitalController@show");
 
 Route::get('/search_hospital/', function() {
