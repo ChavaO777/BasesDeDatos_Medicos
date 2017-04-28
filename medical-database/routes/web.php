@@ -16,8 +16,6 @@ Route::get('/', function () {
     return view('all_doctors');
 });
 
-// Route::get('/show_doctor/{doctor_id}', function($doctor_id) {
-
 Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
 
 Route::get('/show_hospital/{hospital_id}', "HospitalController@show");
