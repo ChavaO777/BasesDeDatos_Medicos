@@ -17,21 +17,7 @@
     	</div>
 
     	<div class="boxedInside">
-    		<!-- <select class="docHospSelect">
-    			<option value="searchingDoc">Doctor</option>
-    			<option value="searchingHosp">Hospital</option>
-    		</select> -->
-
-    		<!-- <select class="searchingSelect">
-    			<option value="hospitalName">Nombre</option>
-				<option value="location">Estado y/o Ciudad</option>
-    		</select>
- -->
-           <!--  <form action="/payment">
-                <input type="text" name="search">
-                <input type="submit">
-            </form> -->
-
+        
             <form action="/show_hospital">
                 
                 <select class="docHospSelect">
