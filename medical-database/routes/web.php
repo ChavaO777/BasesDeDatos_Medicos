@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    
-    return view('all_doctors');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
 
