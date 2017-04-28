@@ -3,8 +3,10 @@
 	<head>
 		<title>B&uacute;squeda de doctor</title>
 		<link rel="stylesheet" href="/css/docStyles.css">
+		
 		<!-- Title font -->
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		
 		<!-- Subtitles font -->
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	</head>

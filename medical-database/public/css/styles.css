@@ -12,7 +12,7 @@
 	cursor: pointer;
     border-radius: 80px;
 	font-size: 120%;
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	color: #FFFFFF;
     height: 50px;
     width: 200px;
@@ -30,7 +30,7 @@
 	cursor: pointer;
     border-radius: 80px;
 	font-size: 120%;
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	color: #FFFFFF;
     height: 50px;
     width: 200px;
@@ -46,7 +46,7 @@
     border-radius: 80px;
     cursor: pointer;
 	font-size: 120%;
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	color: #FFFFFF;
     height: 31px;
     width: 150px;
@@ -102,7 +102,7 @@
 
 	/*About typography*/
 	font-size: 20px;
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	color: #2A948D;
 }
 
@@ -118,7 +118,7 @@
   	top: 96%;
 
   	/*About typography*/
-  	font-family: OratorStd;
+  	font-family: 'Dosis', sans-serif;
   	color: #2A948D;
   	text-align: center;
   	font-size: 120%;
@@ -136,7 +136,7 @@ select{
 	border-color: #2A948D;
 
 	/*About typography*/
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	font-size: 20px;
 	color: #BDBDBD;
 	
@@ -153,7 +153,7 @@ body {
 h1 {
 
 	color: #D90404;
-	font-family: Norwester;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 400%;
 } 
 
@@ -161,6 +161,6 @@ h1 {
 h2 {
 
 	color: #BDBDBD;
-	font-family: OratorStd;
+	font-family: 'Dosis', sans-serif;
 	font-size: 150%;
 }

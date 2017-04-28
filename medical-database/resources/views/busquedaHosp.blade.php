@@ -3,6 +3,12 @@
 	<head>
 		<title>B&uacute;squeda de hospital</title>
 		<link rel="stylesheet" href="/css/hospStyles.css">
+
+        <!-- Title font -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        
+        <!-- Subtitles font -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </head>
 
     <body>
