@@ -22,3 +22,6 @@ Route::get('/search_hospital/', "HospitalController@search");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+// Route::get('/home', 'HomeController@index');
+
