@@ -1,3 +1,5 @@
+
+
 /*Scrollbar style*/
 ::-webkit-scrollbar {
     width: 12px;
@@ -46,7 +48,8 @@
 
 	/*About text*/
 	color: #FFFFFF;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	font-size: 120%;
 	text-align: center;
 }
@@ -64,7 +67,8 @@
 
 	/*About text*/
 	color: #000000;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	font-size: 120%;
 	text-align: center;
 }
@@ -79,7 +83,8 @@
 
 	/*About text*/
 	color: #FFFFFF;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	font-size: 120%;
 }
 
@@ -94,7 +99,8 @@
 	left: 10%;
 
 	color: #D90404;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	font-size: 100%;
 	text-align: center;
 	padding-top: 2%;
@@ -110,7 +116,8 @@
 	cursor: pointer;
     border-radius: 80px;
 	font-size: 120%;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	color: #FFFFFF;
     height: 50px;
     width: 200px;
@@ -132,7 +139,8 @@ body {
 h1 {
 
 	color: #D90404;
-	font-family: Norwester;
+	/*font-family: Norwester;*/
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 400%;
 	text-align: center;
 }
@@ -141,7 +149,8 @@ h1 {
 h2 {
 
 	color: #D90404;
-	font-family: OratorStd;
+	/*font-family: OratorStd;*/
+	font-family: 'Dosis', sans-serif;
 	font-size: 200%;
 	text-align: center;
 }
