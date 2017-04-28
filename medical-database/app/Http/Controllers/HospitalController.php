@@ -31,4 +31,9 @@ class HospitalController extends Controller
 
 		return view('hospProfile', ['hospital' => $hospital, 'total_doctors' => $total_doctors, 'address' => $address]);
 	}
+
+	public function search(){
+
+		return view('busquedaHosp');
+	}
 }

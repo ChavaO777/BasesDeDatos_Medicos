@@ -22,10 +22,7 @@ Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
 
 Route::get('/show_hospital/{hospital_id}', "HospitalController@show");
 
-Route::get('/search_hospital/', function() {
-
-	return view('busquedaHosp');
-});
+Route::get('/search_hospital/', "HospitalController@search");
 
 Auth::routes();
 
