@@ -1,5 +1,4 @@
 <html>
-	
 	<head>
 		<title>B&uacute;squeda de hospital</title>
 		<link rel="stylesheet" href="/css/hospStyles.css">
@@ -18,18 +17,37 @@
     	</div>
 
     	<div class="boxedInside">
-    		<select class="docHospSelect">
+    		<!-- <select class="docHospSelect">
     			<option value="searchingDoc">Doctor</option>
     			<option value="searchingHosp">Hospital</option>
-    		</select>
+    		</select> -->
 
-    		<select class="searchingSelect">
+    		<!-- <select class="searchingSelect">
     			<option value="hospitalName">Nombre</option>
 				<option value="location">Estado y/o Ciudad</option>
     		</select>
+ -->
+           <!--  <form action="/payment">
+                <input type="text" name="search">
+                <input type="submit">
+            </form> -->
 
-    		<input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
-			<button class="button3">Buscar</button>
+            <form action="/show_hospital">
+                
+                <select class="docHospSelect">
+                    <option value="searchingDoc">Doctor</option>
+                    <option value="searchingHosp">Hospital</option>
+                </select>    
+
+                <select class="searchingSelect">
+                    <option value="hospitalName">Nombre</option>
+                    <option value="location">Estado y/o Ciudad</option>
+                </select>
+        		
+                <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
+    			<button class="button3">Buscar</button>
+            
+            </form>
 
 		</div>
         <center><button class="button1">Iniciar sesi&oacute;n</button></center>
