@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Hospital;
+use DB;
+
 use Illuminate\Http\Request;
 
 class HospitalController extends Controller
 {
    public function show($hospital_id) {
 
-		$hospital = App\Hospital::where('id', $hospital_id)->first(); 
+		$hospital = Hospital::where('id', $hospital_id)->firstOrFail(); 
 
 		$total_doctors = DB::table('hospitals')
 			->select('hospitals.address_id', 'hospitals.id')
