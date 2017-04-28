@@ -61,3 +61,7 @@ Route::get('/search_hospital/', function() {
 
 	return view('busquedaHosp');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

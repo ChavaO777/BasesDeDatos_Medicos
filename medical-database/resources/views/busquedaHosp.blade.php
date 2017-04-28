@@ -1,5 +1,4 @@
 <html>
-	
 	<head>
 		<title>B&uacute;squeda de hospital</title>
 		<link rel="stylesheet" href="/css/hospStyles.css">
