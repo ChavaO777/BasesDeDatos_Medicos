@@ -4,18 +4,22 @@ Common Commands
 
 Git:
 
-1) To download the latest version on github:
+	1) To download the latest version on github:
 
-git pull
+	git pull
 
-2) To upload your changes to github:
+	2) To upload your changes to github:
 
-git add .
-git commit -m 'ADD A COMMENT HERE'
-git push
+	git add .
+	git commit -m 'ADD A COMMENT HERE'
+	git push
 
 Laravel/PHP:
 
-1) To start the server:
+	1) To start the server:
 
-php -S localhost:8888 -t public
+	php -S localhost:8888 -t public
+
+	2) To create controller
+
+	php artisan make:controller
