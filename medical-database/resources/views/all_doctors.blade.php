@@ -49,7 +49,9 @@
 
         <br>
 
+        <h2><center>Buscar por:</center></h2>
         <select> 
+            <option value="" disabled selected>Selecciona una opci&oacute;n</option>
             <option value="doctorName">Nombre</option>
             <option value="lastname">Apellido</option>
             <option value="medicalID">C&eacute;dula profesional</option>
@@ -57,6 +59,8 @@
             <option value="location">Estado y/o Ciudad</option>
             <option value="hospitalName">Nombre</option>
         </select>
+        <br>
+        <br>
         <br>
         <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
         <button class="button3">Buscar</button>

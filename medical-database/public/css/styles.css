@@ -52,7 +52,7 @@
     width: 150px;
     position: absolute;
     left:43%;
-    top: 100%;
+    top: 115%;
     border: 1px;
 }
 
@@ -115,7 +115,6 @@
 	border: 3px;
   	left: 350px;
   	width: 500px;
-  	top: 96%;
 
   	/*About typography*/
   	font-family: 'Dosis', sans-serif;
@@ -132,15 +131,17 @@ select{
 	position: absolute;
 	left: 40%;
 	width: 250px;
+	top: 99%;
 	border-radius: 80px;
 	border-color: #2A948D;
 
-	/*About typography*/
+	/*About the typography*/
 	font-family: 'Dosis', sans-serif;
 	font-size: 20px;
 	color: #BDBDBD;
 	
 }
+
 /*Body*/
 body {
 
