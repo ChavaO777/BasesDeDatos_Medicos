@@ -37,6 +37,7 @@
 
             <!-- <button class="button1">Iniciar sesi&oacute;n</button> -->
             <FORM METHOD="LINK" ACTION="login"> <INPUT TYPE="submit" class="button1" VALUE="Iniciar sesi&oacute;n"> </FORM>
+
             <button class="button2">Suscribir</button>
         </div>
 
@@ -65,8 +66,6 @@
         <br>
         <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
         <button class="button3">Buscar</button>
-
-
 
     </body>
 
