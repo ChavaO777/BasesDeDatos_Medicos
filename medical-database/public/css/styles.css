@@ -52,7 +52,7 @@
     width: 150px;
     position: absolute;
     left:43%;
-    top: 115%;
+    top: 130%;
     border: 1px;
 }
 
@@ -98,6 +98,7 @@
   	color: #2A948D;
   	text-align: center;
   	font-size: 120%;
+  	top: 125%;
 }
 
 select{
@@ -108,7 +109,7 @@ select{
 	position: absolute;
 	left: 40%;
 	width: 250px;
-	top: 102%;
+	top: 115%;
 	border-radius: 80px;
 	border-color: #2A948D;
 
