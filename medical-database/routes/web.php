@@ -25,5 +25,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/loginOpt', 'LoginOptionsController@index');
 
+Route::get('/docLogin', 'DoctorLoginController@index');
+
 // Route::get('/home', 'HomeController@index');
 

@@ -63,7 +63,7 @@
 
                 <div class="form-group">
                     <div class="col-md-8 col-md-offset-4">
-                        <button type="submit" class="btn btn-primary" class="button1"><h2>
+                        <button type="submit" class="btn btn-primary"><h2>
                             Ingresar
                         </h2></button>
 
