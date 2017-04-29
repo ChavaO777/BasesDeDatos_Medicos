@@ -43,11 +43,11 @@
 
         <br>
 
-        <input type="checkbox" id="doctor" class="regular-checkbox">
-        <label for="doctor">Buscar doctor</label>
+        <form>
+            <input type ="radio" name="selectSearch" value="doctor" class="regular-checkbox" checked><h3>Buscar doctor</h3><br>
 
-        <input type="checkbox" id="hospital" class="regular-checkbox">
-        <label for="hospital">Buscar hospital</label>
+            <input type ="radio" name="selectSearch" value="hospital" class="regular-checkbox"><h3>Buscar hospital</h3><br>
+        </form>
 
         <br>
 
