@@ -14,7 +14,22 @@
     </div>
 
     <div class="box4">
-        <br>
+
+        <div class="loginBox"><center>
+            <br>
+            <br>
+            <FORM METHOD="LINK" ACTION="login"> <INPUT TYPE="submit" class="button1" VALUE="Doctor"><img src="Doctor.png"></FORM>
+        <!-- </div>
+
+        <div class="patientBox"> -->
+            <br>
+            <br>
+            <FORM METHOD="LINK" ACTION="login"> <INPUT TYPE="submit" class="button1" VALUE="Paciente"><img src="Paciente.png"></FORM>
+        </div></center>
+    </div>
+</div>
+
+        <!-- <br>
         <br>
         <br>
         <img src="Pildora.png" class="pildora">
@@ -25,7 +40,7 @@
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email" class="col-md-4 control-label"><h3>Correo electr&oacute;nico</h3></label>
 
-                    <div class="col-md-6">
+                     <div class="col-md-6">
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus placeholder="example@example.com">
 
                         @if ($errors->has('email'))
@@ -37,10 +52,10 @@
                 </div>
 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-4 control-label"><h3>Contrase&ntilde;a</h3></label>
+                    <label for="password" class="col-md-4 control-label"><h2>Contrase&ntilde;a</h2></label>
 
                     <div class="col-md-6">
-                        <input id="password" type="password" class="form-control" name="password" required>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="******" required>
 
                         @if ($errors->has('password'))
                             <span class="help-block">
@@ -69,7 +84,7 @@
                         <h4><a class="btn btn-link" href="{{ route('password.request') }}">
                             ¿Olvidaste tu contrase&ntilde;a?
                         </h4></a>
-        <br>
+        <br> -->
     </div>
 </div>
 

@@ -1,202 +1,72 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-.box2 {
+/**
+*	White box: title box;
+*/
+.box2{
 
 	background-color: #FFFFFF;
-	width: 90%;
-	text-align: center;
-	position: absolute;
-	left: 5%;
-	height: 30%;
+	width: 95%;
+	left: 3%;
+	position: relative;
 }
 
-.box3{
+/**
+*	Green box: "entrar como";
+*/
+.box3 {
 
+	/*About the box*/
 	background-color: #2A948D;
-	position: absolute;
-	text-align: center;
-	height: 10%;
-	width: 95%;
-	top: 30%;
-	left: 2%;
 
+	/*About the typography*/
 	font-family: 'Dosis', sans-serif;
-	font-size: 250%;
 	color: #FFFFFF;
 	text-align: center;
-}
-
-.box4{
-
-	background-color: #FFFFFF;
-	position: absolute;
-	top: 40%;
-	width: 90%;
-	height: 100%;
-	left: 5%;
-}
-
-.pildora {
-
-	position: absolute;
-	left: 70%;
-}
-
-/**
-* Center elements log in template
-*/
-.col-md-6{
-
-	text-align: center;
-
-}
-
-/**
-* White background behind red title in log in template
-*/
-.panel-heading {
-
-	background-color: #FFFFFF;
-}
-
-/**
-* White background behind e-mail and password in log in template
-*/
-.panel-body {
-
-	background-color: #FFFFFF;
-}
-
-.form-horizontal {
-
-	background-color: #FFFFFF;
-} 
-
-.form-group {
-
-	position: absolute;
-	left: 63%;
-}
-
-/**
-* e-mail elements in log in template
-*/
-[type="email"]{
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 100%;
-	color: #BDBDBD;
-	text-align: center;
-
-	position: absolute;
-	top: 1000%;
-
-	border-radius: 80px;
-	border: 3px;
-	border-color: #2A948D;
-	width: 100%;
-}
-
-/**
-* password elements in log in template
-*/
-[type="password"]{
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 100%;
-	color: #BDBDBD;
-	text-align: center;
-	border-radius: 80px;
-	border: 3px;
-	border-color: #2A948D;
-	width: 25%;
-
-}
-
-[type="checkbox"] {
-	position: absolute;
-	left: 540px;
-	text-align: center;
-	font-family: 'Dosis', sans-serif;
 	font-size: 150%;
-	color: #BDBDBD;
 }
 
-
 /**
-* body style
+*	White box: it contains both log in options;
 */
+.box4 {
+
+	background-color: #FFFFFF;
+	width: 95%;
+	left: 3%;
+	position: relative;
+}
+
+.loginBox {
+
+	position: relative;
+	left: -3%;
+	
+}
+
+.button1 {
+
+	background-color: #000000;
+
+	font-family: 'Dosis', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 150%;
+	position: relative;
+	left: 14%;
+
+	border-radius: 80px;
+}
+
 body {
 
 	background-color: #FFEBAB;
-	overflow-y: visible;
 	overflow-x: hidden;
+	overflow-y: visible;
 }
 
-
-/**
-* Titles style: red color;
-*/
 h1 {
 
+	color: #D90404;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 400%;
-	color: #D90404;
 	text-align: center;
 }
-
-/**
-* Subtitles style: gray color;
-*/
-h2 {
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 250%;
-	color: #BDBDBD;
-	text-align: center;
-}
-
-/**
-* Subtitles style: green style;
-*/
-h3 {
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 150%;
-	color: #2A948D;
-	text-align: center;
-}
-
-/**
-* Body text style: gray text;
-*/
-h4 {
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 150%;
-	color: #BDBDBD;
-	text-align: center;
-}
-
-/**
-* Body text style: green text;
-*/
-h5 {
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 150%;
-	color: #2A948D;
-	text-align: center;
-}
-
-h6 {
-
-	font-family: 'Dosis', sans-serif;
-	font-size: 150%;
-	color: #FFFFFF;
-	text-align: center;
-}
-
-/*h6 {
-	background-color: #FFFFFF;
-}*/
