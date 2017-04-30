@@ -27,6 +27,8 @@ Route::get('/loginOpt', 'LoginOptionsController@index');
 
 Route::get('/docLogin', 'DoctorLoginController@index');
 
+Route::get('/patLogin', 'PatientLoginController@index');
+
 Route::get('/suscribeOpt', 'SuscribeController@index');
 
 Route::get('/doctorSuscribe', 'DoctorSuscribeController@index');

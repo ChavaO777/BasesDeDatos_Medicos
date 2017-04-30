@@ -24,16 +24,10 @@
                 {{ csrf_field() }}
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                    <label for="email" class="col-md-4 control-label"><h2>Correo electr&oacute;nico</h2></label>
+                    <label for="cedula" class="col-md-4 control-label"><h2>C&eacute;dula profesional</h2></label>
 
                      <div class="col-md-6">
-                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus placeholder="example@example.com">
-
-                        @if ($errors->has('email'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                        @endif
+                        <input id="cedula" type="text" class="form-control" name="cedula" placeholder="12345678" required autofocus>
                     </div>
                 </div>
 
@@ -55,7 +49,7 @@
                     <div class="col-md-6 col-md-offset-4">
                         <div class="checkbox">
                             <label><h2>
-                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme
+                                <input type="checkbox" name="remember" class="regular-checkbox" {{ old('remember') ? 'checked' : '' }}> Recordarme
                             </h2></label>
                         </div>
                     </div>
@@ -63,9 +57,9 @@
 
                 <div class="form-group">
                     <div class="col-md-8 col-md-offset-4">
-                        <button type="submit" class="btn btn-primary"><h2>
+                        <button type="submit" class="btn btn-primary">
                             Ingresar
-                        </h2></button>
+                        </button>
 
                         <h2><a class="btn btn-link" href="{{ route('password.request') }}">
                             ¿Olvidaste tu contrase&ntilde;a?

@@ -1,3 +1,24 @@
+.regular-checkbox{
+
+	-webkit-appearance: none;
+	background-color: #FFFFFF;
+	border: 1px solid #2A948D;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+/*.regular-checkbox:active, .regular-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}*/
+
+.regular-checkbox:checked {
+	background-color: #2A948D;
+	border: 1px solid #2A948D;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
 /**
 *	White box: title box;
 */
@@ -47,14 +68,30 @@
 	background-color: #EBEBEB;
 	position: relative;
 
-	font-family: 'Dosis', sans-serif;
-	color: #FFFFFF;
+	font-family: 'Fjalla One', sans-serif;
+	color: #D90404;
 	text-align: center;
 	font-size: 100%;
 
 	border-radius: 20px;
 	border: 1px;
 	width: 20%;
+
+	cursor: pointer;
+}
+
+[type="text"] {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 120%;
+	color: #D90404;
+	width: 20%;
+
+	border-radius: 80px;
+	border-color: #2A948D;
+	border: 1px;
+	text-align: center;
+	background-color: #EBEBEB;
 }
 
 [type="email"] {
@@ -91,6 +128,9 @@
 	left: 21%;
 
 	background-color: #000000;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Dosis', sans-serif;
 }
 
 body {

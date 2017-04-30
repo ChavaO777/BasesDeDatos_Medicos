@@ -22,7 +22,7 @@
         
             <br>
             <br>
-            <FORM METHOD="LINK" ACTION="login"> <INPUT TYPE="submit" VALUE="Paciente" class="button1"><img src="Paciente.png"></FORM>
+            <FORM METHOD="LINK" ACTION="patLogin"> <INPUT TYPE="submit" VALUE="Paciente" class="button1"><img src="Paciente.png"></FORM>
         </div></center>
     </div>
 </div>
