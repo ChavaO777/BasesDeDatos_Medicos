@@ -14,14 +14,14 @@
             
             function habilitarOpt1() {
 
-                document.getElementById("options1").disabled = false;
-                document.getElementById("options2").disabled = true;
+                document.getElementById("opt2").style.visibility = "hidden"
+                document.getElementById("opt1").style.visibility = "visible"
             }
 
             function habilitarOpt2() {
 
-                document.getElementById("options1").disabled=true;
-                document.getElementById("options2").disabled = false;
+                document.getElementById("opt1").style.visibility = "hidden"
+                document.getElementById("opt2").style.visibility = "visible"
             }
 
         </script>
@@ -66,20 +66,19 @@
         <form>
 
             <div>
-                <input type ="radio" name="check" value="1" class="regular-checkbox" onchange="habilitarOpt1();" checked><h3>Buscar doctor</h3><br>
+                <input type ="radio" name="check" value="1" class="regular-checkbox" onchange="habilitarOpt1();" checked=""><h3>Buscar doctor</h3><br>
 
                 <input type ="radio" name="check" value="2" class="regular-checkbox" onchange="habilitarOpt2();"><h3>Buscar hospital</h3><br>
          
             </div>
-            
+            </form>
             <br>
-
-            <div>
-                <h2><center>Buscar por:</center></h2>
-
-                <select name="options1" id="options1"> 
+            <center><h2>Buscar por:</h2></center>
+            
+            <div id="opt1">
+                <select name="options1" id="options1" class="docMenu"> 
                     <option value="" disabled selected>Selecciona una opci&oacute;n</option>
-                    <option value="doctorName">Nombre</option>
+                    <option value="doctorName" id="4">Nombre</option>
                     <option value="lastname">Apellido</option>
                     <option value="medicalID">C&eacute;dula profesional</option>
                     <option value="specialty">Especialidad</option>
@@ -88,18 +87,15 @@
 
            </div>
 
-            <div>
-                <!--  <h2><center>Buscar por:</center></h2>
+            <div id="opt2">
 
-                 --><select name="options2" id="options2"> 
+                <select name="options2" id="options2" class="docMenu"> 
                     <option value="" disabled selected>Selecciona una opci&oacute;n</option>
                     <option value="hospitalName">Nombre</option>
                     <option value="locationHop">Estado y/o Ciudad</option>
                 </select>
 
             </div>
-
-        </form>
 
         <br>
         <br>
