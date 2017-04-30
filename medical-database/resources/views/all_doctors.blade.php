@@ -38,7 +38,9 @@
             <!-- <button class="button1">Iniciar sesi&oacute;n</button> -->
             <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" class="button1" VALUE="Iniciar sesi&oacute;n"> </FORM>
 
-            <button class="button2">Suscribir</button>
+            <!-- <button class="button2">Suscribir</button> -->
+            <FORM METHOD="LINK" ACTION="suscribeOpt"> <INPUT TYPE="submit" class="button2" VALUE="Suscribir"> </FORM>
+
         </div>
 
         <br>
