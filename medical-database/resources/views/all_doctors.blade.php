@@ -9,6 +9,24 @@
         
         <!-- Subtitles font -->
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+        <script>
+            
+            function habilitarOpt1() {
+
+                document.getElementById("options1").disabled = false;
+                document.getElementById("options2").disabled = true;
+            }
+
+            function habilitarOpt2() {
+
+                document.getElementById("options1").disabled=true;
+                document.getElementById("options2").disabled = false;
+            }
+
+        </script>
+
+
     </head>
 
     <body>
@@ -46,23 +64,43 @@
         <br>
 
         <form>
-            <input type ="radio" name="selectSearch" value="doctor" class="regular-checkbox" checked><h3>Buscar doctor</h3><br>
 
-            <input type ="radio" name="selectSearch" value="hospital" class="regular-checkbox"><h3>Buscar hospital</h3><br>
+            <div>
+                <input type ="radio" name="check" value="1" class="regular-checkbox" onchange="habilitarOpt1();" checked><h3>Buscar doctor</h3><br>
+
+                <input type ="radio" name="check" value="2" class="regular-checkbox" onchange="habilitarOpt2();"><h3>Buscar hospital</h3><br>
+         
+            </div>
+            
+            <br>
+
+            <div>
+                <h2><center>Buscar por:</center></h2>
+
+                <select name="options1" id="options1"> 
+                    <option value="" disabled selected>Selecciona una opci&oacute;n</option>
+                    <option value="doctorName">Nombre</option>
+                    <option value="lastname">Apellido</option>
+                    <option value="medicalID">C&eacute;dula profesional</option>
+                    <option value="specialty">Especialidad</option>
+                    <option value="location">Estado y/o Ciudad</option>
+                </select>
+
+           </div>
+
+            <div>
+                <!--  <h2><center>Buscar por:</center></h2>
+
+                 --><select name="options2" id="options2"> 
+                    <option value="" disabled selected>Selecciona una opci&oacute;n</option>
+                    <option value="hospitalName">Nombre</option>
+                    <option value="locationHop">Estado y/o Ciudad</option>
+                </select>
+
+            </div>
+
         </form>
 
-        <br>
-
-        <h2><center>Buscar por:</center></h2>
-        <select> 
-            <option value="" disabled selected>Selecciona una opci&oacute;n</option>
-            <option value="doctorName">Nombre</option>
-            <option value="lastname">Apellido</option>
-            <option value="medicalID">C&eacute;dula profesional</option>
-            <option value="specialty">Especialidad</option>
-            <option value="location">Estado y/o Ciudad</option>
-            <option value="hospitalName">Nombre</option>
-        </select>
         <br>
         <br>
         <br>

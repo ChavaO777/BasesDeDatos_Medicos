@@ -31,9 +31,9 @@ Route::get('/patLogin', 'PatientLoginController@index');
 
 Route::get('/suscribeOpt', 'SuscribeController@index');
 
-Route::get('/doctorSuscribe', 'DoctorSuscribeController@index');
+Route::get('/doctorSuscribe', 'auth\DoctorRegisterController@index');
 
-Route::get('/patientSuscribe', 'PatientSuscribeController@index');
+Route::get('/patientSuscribe', 'auth\PatientRegisterController@index');
 
 // Route::get('/home', 'HomeController@index');
 

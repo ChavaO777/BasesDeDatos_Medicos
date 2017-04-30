@@ -12,7 +12,7 @@
                     <br>
                 </div>
 
-                <div class="box2">Doctor</div>
+                <div class="box2">Paciente</div>
                 <div class="box3"><center>
                     <br>
                     <br>
@@ -51,15 +51,15 @@
                                 <!-- </div> -->
                             </div>
 
-                            <div class="form-group{{ $errors->has('professionalID') ? ' has-error' : '' }}">
-                                <label for="professionalID"><h2>C&eacute;dula Profesional</h2></label>
+                            <div class="form-group{{ $errors->has('birthday') ? ' has-error' : '' }}">
+                                <label for="birthday"><h2>Fecha de nacimiento</h2></label>
 
                                 
-                                <input id="professionalID" type="text" class="form-control" name="professionalID" value="{{ old('professionalID') }}" required autofocus>
+                                <input id="birthday" type="date" class="form-control" name="birthday" value="{{ old('birthday') }}" required autofocus>
 
-                                @if ($errors->has('professionalID'))
+                                @if ($errors->has('birthday'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('professionalID') }}</strong>
+                                        <strong>{{ $errors->first('birthday') }}</strong>
                                     </span>
                                 @endif
                             </div>
