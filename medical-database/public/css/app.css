@@ -133,6 +133,44 @@
 	font-family: 'Dosis', sans-serif;
 }
 
+.button2 {
+
+	background-color: #EBEBEB;
+	position: relative;
+
+	font-family: 'Fjalla One', sans-serif;
+	color: #2A948D;
+	text-align: center;
+	font-size: 100%;
+	left: 5%;
+	top: 40px;
+
+	border-radius: 20px;
+	border: 1px;
+	width: 40%;
+
+	cursor: pointer;
+}
+
+.button3 {
+
+	background-color: #EBEBEB;
+	position: relative;
+
+	font-family: 'Fjalla One', sans-serif;
+	color: #2A948D;
+	text-align: center;
+	font-size: 100%;
+	left: 55%;
+	top: -5px;
+
+	border-radius: 20px;
+	border: 1px;
+	width: 40%;
+
+	cursor: pointer;
+}
+
 body {
 
 	background-color: #FFEBAB;
