@@ -13,8 +13,9 @@ class HomeController extends Controller
      * @return void
      */
     public function __construct()
-    {
-        $this->middleware('guest');
+    {   
+        $this->middleware('auth');
+        // $this->middleware('guest');
     }
 
     /**
@@ -24,6 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('all_doctors');
+        return view('search');
     }
 }
