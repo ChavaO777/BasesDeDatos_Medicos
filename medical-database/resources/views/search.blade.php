@@ -74,6 +74,15 @@
             </form>
             <br>
             <center><h2>Buscar por:</h2></center>
+
+            {!! Form::open(array('action' => 'SearchController@default')) !!}
+            
+                {{ Form::radio('check', '1', ['class' => 'regular-checkbox']) }}<br>
+                {{ Form::radio('check', '2', ['class' => 'regular-checkbox']) }}
+
+                {{ Form::submit('Enviar!') }}            
+
+            {{ Form::close() }}
             
             <div id="opt1">
                 <select name="options1" id="options1" class="docMenu"> 

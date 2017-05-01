@@ -18,11 +18,11 @@
 
     	<div class="boxedInside">
         
-            <form action="/show_hospital">
+            <form action="/search_handler.php" method="post">
                 
                 <select class="docHospSelect">
-                    <option value="searchingDoc">Doctor</option>
-                    <option value="searchingHosp">Hospital</option>
+                    <option name="search_type" value="searchingDoc">Doctor</option>
+                    <option name="search_type" value="searchingHosp">Hospital</option>
                 </select>    
 
                 <select class="searchingSelect">
