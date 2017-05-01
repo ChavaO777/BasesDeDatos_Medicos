@@ -73,6 +73,6 @@ class DoctorRegisterController extends Controller
 
     public function index()
     {
-        return view('auth/doctorRegister');
+        return view('/auth/doctorRegister');
     }
 }

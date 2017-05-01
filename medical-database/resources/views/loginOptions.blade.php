@@ -18,11 +18,11 @@
         <div class="loginBox"><center>
             <br>
             <br>
-            <FORM METHOD="LINK" ACTION="auth/docLogin"> <INPUT TYPE="submit" class="button1" VALUE="Doctor"><img src="Doctor.png"></FORM>
+            <FORM METHOD="LINK" ACTION="docLogin"> <INPUT TYPE="submit" class="button1" VALUE="Doctor"><img src="Doctor.png"></FORM>
         
             <br>
             <br>
-            <FORM METHOD="LINK" ACTION="auth/patLogin"> <INPUT TYPE="submit" VALUE="Paciente" class="button1"><img src="Paciente.png"></FORM>
+            <FORM METHOD="LINK" ACTION="patLogin"> <INPUT TYPE="submit" VALUE="Paciente" class="button1"><img src="Paciente.png"></FORM>
         </div></center>
     </div>
 </div>

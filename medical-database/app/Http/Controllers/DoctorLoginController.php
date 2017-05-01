@@ -23,6 +23,6 @@ class DoctorLoginController extends Controller
      */
     public function index()
     {
-        return view('/auth/doctorLogin');
+        return view('auth/doctorLogin');
     }
 }
