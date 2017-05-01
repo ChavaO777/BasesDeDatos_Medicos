@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 class SearchDoctorController extends Controller
 {
-    public function default(){
+
+    public function index(){
 
     	return view('search_doctors');
     }
 
-    public function search(){
+    public function search($request){
 
-    	return view('search_results');
-    	
+    	return view('search_results');    	
     }
 }
