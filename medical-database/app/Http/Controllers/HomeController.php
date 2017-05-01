@@ -25,25 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {       
-
-        $search_types = array(
-                            
-                            1 => array(
-
-                                    'firstName' => 'Nombre',
-                                    'lastName' => 'Apellido',
-                                    'specialty' => 'Especialidad',
-                                    'medical_id' => 'Cédula'
-                                ),
-
-                            2 => array(
-
-                                    'name' => 'Nombre',
-                                    'city' => 'Ciudad'
-                                )
-                        );
         
-
-        return view('search', ['search_types' => $search_types]);
+        return view('search');
     }
 }
