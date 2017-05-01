@@ -6,21 +6,28 @@
 <div class="box1">
     <h1>Base de datos de servicios m&eacute;dicos</h1>
     <br>
-    <h2><center>TE AYUDAMOS A ENCONTRAR DOCTORES Y HOSPITALES.
+    <h3><center>TE AYUDAMOS A ENCONTRAR DOCTORES Y HOSPITALES.
     <br>BUSCA CON FILTROS Y SELECCIONA LA MEJOR OPCI&Oacute;N
     <br>QUE SE ADAPTE A TUS NECESIDADES Y REQUISITOS
-    </h2></center>
+    </h3></center>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
     <center>
-    <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" VALUE="Iniciar sesi&oacute;n"> </FORM>
+    <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" class="button4" VALUE="Iniciar sesi&oacute;n"> </FORM>
 
-    <FORM METHOD="LINK" ACTION="suscribeOpt"> <INPUT TYPE="submit" VALUE="Suscribir"> </FORM>
+    <FORM METHOD="LINK" ACTION="suscribeOpt"> <INPUT TYPE="submit" class="button5" VALUE="Suscribir"> </FORM>
     </center>
-    <br>
-    <br>
     <br>
     <br>
 </div>
