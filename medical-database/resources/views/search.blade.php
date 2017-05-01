@@ -58,6 +58,7 @@
         </div>
 
         <br>
+
         <br>
             <center><h2>Buscar por:</h2></center>
 
@@ -66,6 +67,13 @@
                 
                 {{ Form::label('check', 'Doctor', array('id' => '1', 'class' => '')) }}
                 {{ Form::radio('check', '1', ['class' => 'regular-checkbox']) }}
+
+
+            <!-- {!! Form::open(array('action' => 'SearchController@default')) !!}
+            
+                {{ Form::radio('check', '1', ['class' => 'regular-checkbox']) }}<br>
+                {{ Form::radio('check', '2', ['class' => 'regular-checkbox']) }}
+>>>>>>> Stashed changes
 
                 <br>
                 <br>
@@ -92,30 +100,16 @@
                 <br>
                 <br>            
 
+<<<<<<< Updated upstream
             {{ Form::close() }}
             </center>
             
             <!-- <div id="opt1">
-                <select name="options1" id="options1" class="docMenu"> 
-                    <option value="" disabled selected>Selecciona una opci&oacute;n</option>
-                    <option value="doctorName" id="4">Nombre</option>
-                    <option value="lastname">Apellido</option>
-                    <option value="medicalID">C&eacute;dula profesional</option>
-                    <option value="specialty">Especialidad</option>
-                    <option value="location">Estado y/o Ciudad</option>
-                </select>
+=======
+            {{ Form::close() }} -->
+            
+            <div id="opt1" class="opt1">
 
-           </div>
-
-            <div id="opt2">
-
-                <select name="options2" id="options2" class="docMenu"> 
-                    <option value="" disabled selected>Selecciona una opci&oacute;n</option>
-                    <option value="hospitalName">Nombre</option>
-                    <option value="locationHop">Estado y/o Ciudad</option>
-                </select>
-
-            </div> -->
 
         <br>
         <br>
