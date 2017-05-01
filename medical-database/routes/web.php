@@ -17,9 +17,9 @@ Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
 
 Route::get('/show_hospital/{hospital_id}', "HospitalController@show");
 
-Route::get('/search_hospital/', "HospitalController@search");
-
 Auth::routes();
+
+//Login Routes
 
 Route::get('/home', 'HomeController@index');
 
@@ -36,6 +36,12 @@ Route::get('/doctorSuscribe', 'auth\DoctorRegisterController@index');
 Route::get('/patientSuscribe', 'auth\PatientRegisterController@index');
 
 Route::post('/results', 'SearchController@default');
+
+//Search Routes
+
+Route::get('/search_doctor', "SearchDoctorController@default");
+
+Route::get('/search_hospital', "SearchHospitalController@default");
 
 // Route::get('/home', 'HomeController@index');
 
