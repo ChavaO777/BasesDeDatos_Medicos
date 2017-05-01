@@ -10,4 +10,9 @@ class SearchDoctorController extends Controller
 
     	return view('search_doctors');
     }
+
+    public function search(){
+
+    	
+    }
 }

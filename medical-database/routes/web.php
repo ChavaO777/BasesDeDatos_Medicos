@@ -43,5 +43,3 @@ Route::get('/search_doctor', "SearchDoctorController@default");
 
 Route::get('/search_hospital', "SearchHospitalController@default");
 
-// Route::get('/home', 'HomeController@index');
-
