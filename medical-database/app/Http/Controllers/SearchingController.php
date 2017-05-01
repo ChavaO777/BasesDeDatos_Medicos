@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use resources\views\all_doctors;
 
-class HomeController extends Controller
+class SearchingController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('all_doctors');
+        return view('searchingView');
     }
 }

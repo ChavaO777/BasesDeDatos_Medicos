@@ -35,5 +35,7 @@ Route::get('/doctorSuscribe', 'auth\DoctorRegisterController@index');
 
 Route::get('/patientSuscribe', 'auth\PatientRegisterController@index');
 
+Route::get('/searching', 'SearchingController@index');
+
 // Route::get('/home', 'HomeController@index');
 
