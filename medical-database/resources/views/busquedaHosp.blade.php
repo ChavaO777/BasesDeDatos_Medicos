@@ -1,42 +1,23 @@
-<html>
-	<head>
-		<title>B&uacute;squeda de hospital</title>
-		<link rel="stylesheet" href="/css/hospStyles.css">
+@extends('layouts.app')
 
-        <!-- Title font -->
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        
-        <!-- Subtitles font -->
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    </head>
+@section('content')
 
-    <body>
-    	<div class="boxed">
-    		<h1>Buscando un hospital</h1>
-    		<h2>Resultados de la b&uacute;squeda</h2>
-    	</div>
 
-    	<div class="boxedInside">
-        
-            <form action="/search_handler.php" method="post">
-                
-                <select class="docHospSelect">
-                    <option name="search_type" value="searchingDoc">Doctor</option>
-                    <option name="search_type" value="searchingHosp">Hospital</option>
-                </select>    
+<div class="box1">
+	<h1>Buscando un hospital</h1>
+    <br>
+</div>
 
-                <select class="searchingSelect">
-                    <option value="hospitalName">Nombre</option>
-                    <option value="location">Estado y/o Ciudad</option>
-                </select>
-        		
-                <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
-    			<button class="button3">Buscar</button>
-            
-            </form>
+<div class="box2">
+    Resultados de la b&uacute;squeda
+</div>
 
-		</div>
-        <center><button class="button1">Iniciar sesi&oacute;n</button></center>
+<div class="box3"><center>
+    <form action="/search_handler.php" method="post">
+        <br>
+        <h2>Aquí van los resultados:</h2>
+    
+    </form>
+</div></center>
 
-    </body>
-</html>
+<center><FORM METHOD="LINK" ACTION="/views/loginOpt"> <INPUT TYPE="submit" class="button3" VALUE="Iniciar sesi&oacute;n"> </FORM></center>
