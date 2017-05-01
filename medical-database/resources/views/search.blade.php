@@ -1,14 +1,11 @@
+@extends('layouts.app')
+
+@section('content')
+
 <html>
     
     <head>
         <title>Pagina de inicio</title>
-        <link rel="stylesheet" href="/css/styles.css">
-
-        <!-- Title font -->
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        
-        <!-- Subtitles font -->
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
         <script>
             

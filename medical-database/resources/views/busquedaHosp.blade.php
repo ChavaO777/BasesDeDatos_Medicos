@@ -20,4 +20,4 @@
     </form>
 </div></center>
 
-<center><FORM METHOD="LINK" ACTION="/views/loginOpt"> <INPUT TYPE="submit" class="button3" VALUE="Iniciar sesi&oacute;n"> </FORM></center>
+<center><FORM METHOD="LINK" ACTION="./home"> <INPUT TYPE="submit" class="button3" VALUE="Nueva b&uacute;squeda"></FORM></center>
