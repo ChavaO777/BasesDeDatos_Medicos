@@ -23,6 +23,6 @@ class SearchResultsController extends Controller
      */
     public function index()
     {
-        return view('searchingView');
+        return view('searchResults');
     }
 }
