@@ -24,6 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('all_doctors');
+        return view('search');
     }
 }
