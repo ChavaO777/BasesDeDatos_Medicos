@@ -24,7 +24,26 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('search');
+    {       
+
+        $search_types = array(
+                            
+                            1 => array(
+
+                                    'firstName' => 'Nombre',
+                                    'lastName' => 'Apellido',
+                                    'specialty' => 'Especialidad',
+                                    'medical_id' => 'Cédula'
+                                ),
+
+                            2 => array(
+
+                                    'name' => 'Nombre',
+                                    'city' => 'Ciudad'
+                                )
+                        );
+        
+
+        return view('search', ['search_types' => $search_types]);
     }
 }
