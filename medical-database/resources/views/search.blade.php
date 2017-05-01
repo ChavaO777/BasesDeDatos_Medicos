@@ -109,8 +109,10 @@
         <br>
         <br>
         <br>
-        <input type="text" id="search" placeholder="Ingresa tu b&uacute;squeda">
-        <button class="button3">Buscar</button>
+        <input type="text" id="search" name="search" placeholder="Ingresa tu b&uacute;squeda">
+        
+        <!-- <button class="button3">Buscar</button> -->
+        <FORM METHOD="LINK" ACTION="searching"> <INPUT TYPE="submit" class="button3" VALUE="Buscar"> </FORM>
 
     </body>
 
