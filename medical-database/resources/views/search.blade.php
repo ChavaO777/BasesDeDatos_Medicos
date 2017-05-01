@@ -32,8 +32,8 @@
 <div class="box3">
 
     <br>
-    <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" class="button2" VALUE="Buscar doctor"> </FORM>
-    <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" class="button3" VALUE="Buscar hospital"> </FORM>
+    <FORM METHOD="LINK" ACTION="search_doctor"> <INPUT TYPE="submit" class="button2" VALUE="Buscar doctor"> </FORM>
+    <FORM METHOD="LINK" ACTION="search_hospital"> <INPUT TYPE="submit" class="button3" VALUE="Buscar hospital"> </FORM>
     <br>
     <br>
     <br>
