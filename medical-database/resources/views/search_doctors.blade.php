@@ -25,7 +25,7 @@
             <center><h2>Buscar por:</h2></center>
 
             <center>
-            {!! Form::open(array('action' => 'SearchController@default')) !!}
+            {!! Form::open(array('action' => 'SearchController@searchDoctors')) !!}
                 
                 
 
@@ -46,7 +46,7 @@
                 <br>
                 <br>
 
-                {{ Form::submit('Enviar!') }}
+                {{ Form::submit('Buscar') }}
                 <br>
                 <br>            
 

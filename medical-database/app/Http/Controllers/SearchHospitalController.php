@@ -10,9 +10,4 @@ class SearchHospitalController extends Controller
 
     	return view('search_hospitals');
     }
-
-    public function search($request){
-
-    	$search_criteria = $request['key'];
-    }
 }

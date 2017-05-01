@@ -6,8 +6,17 @@ use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-    public function default(){
+    public function searchDoctors(){
 
-    	return view('search_results');
+    	
+
+    	return view('searchResults');
+    }
+
+    public function searchHospitals(){
+
+    	
+
+    	return view('searchResults');
     }
 }
