@@ -1,11 +1,14 @@
-@extends('layouts.app')
-
-@section('content')
-
 <html>
     
     <head>
         <title>Pagina de inicio</title>
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <!-- Title font -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        
+        <!-- Subtitles font -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
         <script>
             
@@ -22,6 +25,7 @@
             }
 
         </script>
+
 
     </head>
 
@@ -58,44 +62,20 @@
         </div>
 
         <br>
-        <br>
+
+        <form>
+
+            <div>
+                <input type ="radio" name="check" value="1" class="regular-checkbox" onchange="habilitarOpt1();" checked=""><h3>Buscar doctor</h3><br>
+
+                <input type ="radio" name="check" value="2" class="regular-checkbox" onchange="habilitarOpt2();"><h3>Buscar hospital</h3><br>
+         
+            </div>
+            </form>
+            <br>
             <center><h2>Buscar por:</h2></center>
-
-            <center>
-            {!! Form::open(array('action' => 'SearchController@default')) !!}
-                
-                {{ Form::label('check', 'Doctor', array('id' => '1', 'class' => '')) }}
-                {{ Form::radio('check', '1', ['class' => 'regular-checkbox']) }}
-
-                <br>
-                <br>
-                {{ Form::label('check', 'Hospital', array('id' => '2', 'class' => '')) }}
-                {{ Form::radio('check', '2', ['class' => 'regular-checkbox']) }}
-                <br>
-                <br> 
-
-                @if('check' == '1')
-                     {{ Form::select('option', $search_types[1]) }}  
-                @elseif('check' == '2')
-                    {{ Form::select('option', $search_types[2]) }}  
-                @endif
-
-                {{ Form::text('search_text','Ingrese su búsqueda',array('id'=>'3','class'=>'')) }}
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-                {{ Form::submit('Enviar!') }}
-                <br>
-                <br>            
-
-            {{ Form::close() }}
-            </center>
             
-            <!-- <div id="opt1">
+            <div id="opt1">
                 <select name="options1" id="options1" class="docMenu"> 
                     <option value="" disabled selected>Selecciona una opci&oacute;n</option>
                     <option value="doctorName" id="4">Nombre</option>
@@ -115,26 +95,15 @@
                     <option value="locationHop">Estado y/o Ciudad</option>
                 </select>
 
-            </div> -->
+            </div>
 
         <br>
         <br>
         <br>
-       <!--  <center>
         <input type="text" id="search" name="search" placeholder="Ingresa tu b&uacute;squeda">
-        </center> -->
+        
         <!-- <button class="button3">Buscar</button> -->
-        <!-- <FORM METHOD="LINK" ACTION="searching"> <INPUT TYPE="submit" class="button3" VALUE="Buscar"> </FORM> -->
-
-        <br>
-        <br>
-        <br>
-         <br>
-        <br>
-        <br>
-         <br>
-        <br>
-        <br>
+        <FORM METHOD="LINK" ACTION="searching"> <INPUT TYPE="submit" class="button3" VALUE="Buscar"> </FORM>
 
     </body>
 
