@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Database\Seeder;
+use Hash;
 
 class DoctorRegisterController extends Controller
 {
@@ -28,23 +30,6 @@ class DoctorRegisterController extends Controller
 
     protected function create(){
 
-    	/*$doctor = new Doctor;
-
-
-    	$name = $_POST['name'];
-    	$lastname = $_POST['lastname'];
-    	$medical_id = $_POST['medical_id'];
-    	$specialty = $_POST['specialty'];
-    	$password = $_POST['password'];
-
-    	$doctor->first_name = $name;
-    	$doctor->last_name = $lastname;
-    	$doctor->medical_id = $medical_id;
-    	$doctor->specialty = $specialty;
-    	$doctor->password = $password;
-
-    	return Redirect::back();*/
-
     	$name = $_POST['name'];
     	$lastname = $_POST['lastname'];
     	$medical_id = $_POST['medical_id'];
@@ -52,8 +37,6 @@ class DoctorRegisterController extends Controller
 
     	$specialty = DB::table('specialties')->
     		where('name', '=', $specialty)->select('id')->first();
-
-        // dd($specialty->id);
     	
     	$password = $_POST['password'];
     	$consultation_cost = $_POST['consultation_cost'];
@@ -65,6 +48,15 @@ class DoctorRegisterController extends Controller
 									'password'=>$password,
 									'consultation_cost' => $consultation_cost]
     	);
+        
+        $hashed_password = Hash::make($password);
+
+        DB::table('users')->insert([
+                'name' => ($name . ' ' . $lastname),
+                'email' => $medical_id . '@mail.com',
+                'password' => $hashed_password,
+                'remember_token' => $password,
+            ]);
 
     	return Redirect::back();
     }
