@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
         <!-- font-family: 'Fjalla One', sans-serif; -->
 
-
         <!-- CSS And JavaScript -->
     </head>
 

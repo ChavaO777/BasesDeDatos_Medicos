@@ -50,8 +50,10 @@ class DoctorRegisterController extends Controller
     	$medical_id = $_POST['medical_id'];
     	$specialty = $_POST['specialty'];
 
-    	$specialty_id = DB::table('specialties')->
-    		where('name', '=', $specialty) -> select('id')->fistOrFail();
+    	$specialty = DB::table('specialties')->
+    		where('name', '=', $specialty)->select('id')->first();
+
+        // dd($specialty->id);
     	
     	$password = $_POST['password'];
     	$consultation_cost = $_POST['consultation_cost'];
@@ -59,7 +61,7 @@ class DoctorRegisterController extends Controller
     	DB::table('doctors')->insert(['first_name'=>$name, 
 									'last_name'=>$lastname,
 									'medical_id'=>$medical_id,
-									'specialty_id'=>$specialty_id,
+									'specialty_id'=>$specialty->id,
 									'password'=>$password,
 									'consultation_cost' => $consultation_cost]
     	);
