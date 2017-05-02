@@ -19,7 +19,9 @@ class DoctorController extends Controller
         $this->middleware('guest');
     }
 
-    public function show($doctor_id){
+    public function show(){
+
+        $doctor_id = $_POST['doctor_id'];
 
 		$doctor = Doctor::where('id', $doctor_id)->firstOrFail(); 
 		$total_doctor_reviews = Review::where('doctor_id', $doctor_id);
@@ -27,5 +29,7 @@ class DoctorController extends Controller
 		$doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
 
 		return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty]);
+
+        //return view('search_results');
     }
 }

@@ -9,7 +9,9 @@ use Illuminate\Http\Request;
 
 class HospitalController extends Controller
 {
-   public function show($hospital_id) {
+   public function show() {
+
+   		$hospital_id = $_POST['hospital_id'];
 
 		$hospital = Hospital::where('id', $hospital_id)->firstOrFail(); 
 

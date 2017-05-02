@@ -13,9 +13,11 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/show_doctor/{doctor_id}', "DoctorController@show");
+//Profile Routes
 
-Route::get('/show_hospital/{hospital_id}', "HospitalController@show");
+Route::post('/show_doctor', "DoctorController@show");
+
+Route::post('/show_hospital', "HospitalController@show");
 
 Auth::routes();
 
