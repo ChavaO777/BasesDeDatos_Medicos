@@ -20,8 +20,14 @@ class SearchController extends Controller
 							where('name', '=', $lookFor)->
 							select('id')->first();
 
-			$total_doctors = DB::table('doctors')->
+			if($specialty != null){
+				$total_doctors = DB::table('doctors')->
 							where('doctors.specialty_id', '=', $specialty->id)->get();
+			}else{
+				$total_doctors = DB::table('doctors')->
+							where('doctors.specialty_id', '=', -1)->get();
+			}
+			
 		}
 		
 
