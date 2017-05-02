@@ -10,6 +10,7 @@
 <div class="box2">Resultados de tu b&uacute;squeda</div>
 
 <div class="box3">
+	<center>
 
 
 
@@ -52,5 +53,7 @@
 		{{ Form::close() }}
 
 	@endif
+
+	</center>
 
 </div>
