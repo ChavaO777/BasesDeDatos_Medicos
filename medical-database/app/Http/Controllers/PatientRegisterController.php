@@ -26,25 +26,27 @@ class PatientRegisterController extends Controller
         ]);
     }
 
-    public function getAgeAttribute()
+    protected function create()
     {
-        return Carbon::parse($this->attributes['birthdate'])->age;
-    }
-
-    protected function create(){
 
         $user = $_POST['username'];
         $name = $_POST['name'];
         $lastname = $_POST['lastname'];
         $birthdate = $_POST['birthdate'];
         $password = $_POST['password'];
-        $age = $birthdate->diff(Carbon::now());
+        
+        $dateNow = Carbon::now();
+        $dt = Carbon::parse($birthdate);
 
-        DB::table('doctors')->insert(['user_name'=>$username,
+        $age = $dt->diffInYears($dateNow);
+        
+
+
+        DB::table('patients')->insert(['user_name'=>$user,
                                     'first_name'=>$name, 
                                     'last_name'=>$lastname,
                                     'password'=>$password,
-                                    'birthday'=>$birthday,
+                                    'birthdate'=>$birthdate,
                                     'age'=> $age]
         );
 
