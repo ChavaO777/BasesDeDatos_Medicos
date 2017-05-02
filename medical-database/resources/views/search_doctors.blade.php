@@ -38,7 +38,7 @@
                 <br>
                
 
-                {{ Form::text('search_text','Ingrese su búsqueda',array('id'=>'3','class'=>'')) }}
+                {{ Form::text('search_text','Ingrese su búsqueda',array('id'=>'3','class'=>'placeholder')) }}
                 <br>
                 <br>
                 <br>

@@ -26,7 +26,7 @@
     <center>
     <FORM METHOD="LINK" ACTION="loginOpt"> <INPUT TYPE="submit" class="button4" VALUE="Iniciar sesi&oacute;n"> </FORM>
 
-    <FORM METHOD="LINK" ACTION="suscribeOpt"> <INPUT TYPE="submit" class="button5" VALUE="Suscribir"> </FORM>
+    <FORM METHOD="LINK" ACTION="suscribeOpt"> <INPUT TYPE="submit" class="button5" VALUE="Registrarse"> </FORM>
     </center>
     <br>
     <br>

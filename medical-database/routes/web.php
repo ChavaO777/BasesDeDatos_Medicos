@@ -45,5 +45,5 @@ Route::post('/results_doctors', 'SearchController@searchDoctors');
 
 Route::get('/search_doctor', "SearchDoctorController@index");
 
-Route::get('/search_hospital', "SearchHospitalController@default");
+Route::get('/search_hospital', "SearchHospitalController@index");
 
