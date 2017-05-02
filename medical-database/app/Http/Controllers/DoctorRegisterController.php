@@ -48,8 +48,11 @@ class DoctorRegisterController extends Controller
     	$name = $_POST['name'];
     	$lastname = $_POST['lastname'];
     	$medical_id = $_POST['medical_id'];
-    	// $specialty_id = $_POST['specialty'];
-    	$specialty_id = 1;
+    	$specialty = $_POST['specialty'];
+
+    	$specialty_id = DB::table('specialties')->
+    		where('name', '=', $specialty) -> select('id')->fistOrFail();
+    	
     	$password = $_POST['password'];
     	$consultation_cost = $_POST['consultation_cost'];
 
