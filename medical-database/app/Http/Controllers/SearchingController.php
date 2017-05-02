@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SearchResultsController extends Controller
+class SearchingController extends Controller
 {
     /**
      * Create a new controller instance.

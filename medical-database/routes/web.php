@@ -33,7 +33,7 @@ Route::get('/patLogin', 'PatientLoginController@index');
 
 Route::get('/suscribeOpt', 'SuscribeController@index');
 
-Route::get('/doctorSuscribe', 'auth\DoctorRegisterController@index');
+Route::get('/doctorSuscribe', 'DoctorRegisterController@index');
 
 Route::get('/patientSuscribe', 'auth\PatientRegisterController@index');
 
@@ -46,4 +46,7 @@ Route::post('/results_doctors', 'SearchController@searchDoctors');
 Route::get('/search_doctor', "SearchDoctorController@index");
 
 Route::get('/search_hospital', "SearchHospitalController@index");
+
+//Register Routes
+Route::post('/register_doctor', 'DoctorRegisterController@create');
 
