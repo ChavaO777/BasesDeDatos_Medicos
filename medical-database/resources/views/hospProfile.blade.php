@@ -1,17 +1,9 @@
-<html>
+@extends('layouts.app')
+@section('title')
+Perfil del hospital
+@stop
 
-	<head>
-		<title>B&uacute;squeda hospital</title>
-		<link rel="stylesheet" href="/css/hospStyles.css">
-
-		<!-- Title font -->
-		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-		
-		<!-- Subtitles font -->
-		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	</head>
-
-	<body>
+	@section('content')
 		<br>
 		<div class="titleBox">
 			<br>
@@ -60,5 +52,5 @@
 		</div>
 
 		<center><button class="button1">Iniciar sesi&oacute;n</button></center>
-	</body>
+	@stop
 </html>
