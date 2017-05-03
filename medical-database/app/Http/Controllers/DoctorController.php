@@ -13,11 +13,10 @@ class DoctorController extends Controller
     public function show(){
 
         $doctor_id = $_POST['doctor_id'];
-        dd($doctor_id);
 
 		$doctor = Doctor::where('id', $doctor_id)->firstOrFail(); 
-        // dd($doctor);
-		$total_doctor_reviews = Review::where('doctor_id', $doctor_id);
+		
+        $total_doctor_reviews = Review::where('doctor_id', $doctor_id);
 			
 		$doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
 

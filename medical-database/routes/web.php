@@ -25,11 +25,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-/*Route::get('/loginOpt', 'LoginOptionsController@index');
+Route::get('/loginOpt', 'LoginOptionsController@index');
 
 Route::get('/docLogin', 'DoctorLoginController@index');
 
-Route::get('/patLogin', 'PatientLoginController@index');*/
+Route::get('/patLogin', 'PatientLoginController@index');
 
 Route::get('/suscribeOpt', 'SuscribeController@index');
 
@@ -40,8 +40,6 @@ Route::get('/patientSuscribe', 'PatientRegisterController@index');
 Route::post('/results_hospitals', 'SearchController@searchHospitals');
 
 Route::post('/results_doctors', 'SearchController@searchDoctors');
-
-Route::get('/logged_home', 'LoggedInController@index');
 
 //Search Routes
 

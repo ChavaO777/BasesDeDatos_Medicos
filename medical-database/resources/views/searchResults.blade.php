@@ -15,45 +15,43 @@
 
 	@if($flag == 1)
 
-		{!! Form::open(array('action' => 'DoctorController@show')) !!}
-
 			@forelse($total_doctors as $doctor)
 
+				{!! Form::open(array('action' => 'DoctorController@show')) !!}
 
-				<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
-				
-				<p> {{ $doctor->id }}</p>
+					<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
+					
+					<p> {{ $doctor->id }}</p>
 
-				<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
-				<!-- {{ Form::submit('Ver perfil')}} -->
-				<a href="docProfile", $doctor->id])>Ver perfil</a>
-				</p></h2>
+					<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
+					{{ Form::submit('Ver perfil')}}
+					</p></h2>
+
+				{{ Form::close() }}
 
 			@empty
 				<p><h3>No se encontro ningun resultado</h3></p>
 
 			@endforelse
 
-		{{ Form::close() }}
-
 	@elseif($flag == 2)
 
-		{!! Form::open(array('action' => 'HospitalController@show')) !!}
-
 			@forelse($total_hospitals as $hospital)
+
+				{!! Form::open(array('action' => 'HospitalController@show')) !!}
 
 				<p class="hide">{{ Form::number('hospital_id', $hospital -> id)}}</p>
 
 				<p><h2> {{$hospital -> name}}
 				{{ Form::submit('Ver perfil')}}
 				</p></h2>
+
+				{{ Form::close() }}
 			
 			@empty
 				<p><h3>No se encontro ningun resultado</h3></p>
 
 			@endforelse
-
-		{{ Form::close() }}
 
 	@endif
 
