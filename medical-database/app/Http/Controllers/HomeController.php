@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use resources\views\all_doctors;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -25,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {       
-        return view('search');
+        if(Auth::guest())
+            return view('search');
+        else
+            return view('LoggedInSearch');
     }
 }
