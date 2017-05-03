@@ -12,4 +12,5 @@ class LoggedInController extends Controller
 
     	return view('LoggedInSearch'); 
     }
+
 }
