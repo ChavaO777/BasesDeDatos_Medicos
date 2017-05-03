@@ -12,15 +12,16 @@
 <div class="box3">
 	<center>
 
-
-
 	@if($flag == 1)
 
 		{!! Form::open(array('action' => 'DoctorController@show')) !!}
 
 			@forelse($total_doctors as $doctor)
 
+
 				<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
+				
+				<p> {{ $doctor->id }}</p>
 
 				<p> {{$doctor -> first_name}} {{$doctor -> last_name}}
 				{{ Form::submit('Ver perfil')}}

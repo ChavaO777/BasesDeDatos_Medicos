@@ -26,9 +26,6 @@
 
             <center>
             {!! Form::open(array('action' => 'SearchController@searchDoctors')) !!}
-                
-                
-
                
                 {{ Form::select('option', array('first_name' => 'Nombre',
                                                 'last_name' => 'Apellido',
@@ -37,7 +34,6 @@
                 <br>
                 <br>
                
-
                 {{ Form::text('search_text','Ingrese su búsqueda',array('id'=>'3','class'=>'placeholder')) }}
                 <br>
                 <br>

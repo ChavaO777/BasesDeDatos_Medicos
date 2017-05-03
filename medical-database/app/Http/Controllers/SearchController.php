@@ -27,9 +27,7 @@ class SearchController extends Controller
 				$total_doctors = DB::table('doctors')->
 							where('doctors.specialty_id', '=', -1)->get();
 			}
-			
 		}
-		
 
     	return view('searchResults', ['total_doctors' => $total_doctors, 'flag' => 1]);
     }
@@ -51,8 +49,6 @@ class SearchController extends Controller
 							where('hospitals.id', '=', $city->id)->get();
 		}
     	
-			
-		//dd($city_id);
     	return view('searchResults', ['total_hospitals' => $total_hospitals, 'flag' => 2]);
     }
 }
