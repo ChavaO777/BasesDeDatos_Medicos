@@ -2,6 +2,12 @@
 @section('title')
 Perfil del hospital
 @stop
+		
+	<head>
+
+		<link rel="stylesheet" href="/css/hospStyles.css" />
+
+	</head>
 
 	@section('content')
 		<br>
@@ -53,4 +59,3 @@ Perfil del hospital
 
 		<center><button class="button1">Iniciar sesi&oacute;n</button></center>
 	@stop
-</html>
