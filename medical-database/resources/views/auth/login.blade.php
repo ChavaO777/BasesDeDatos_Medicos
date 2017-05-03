@@ -8,9 +8,6 @@
     <br>
 </center></div>
 
-<div class="box2"><center>
-    
-</center></div>
 
 <div class="box3"><center>
     <br>
