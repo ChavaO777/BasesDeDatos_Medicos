@@ -51,6 +51,10 @@
 			<br>
 			<br>
 			<h2>Rese&ntilde;as</h2>
+
+			
+
+
 			<table style="width: 80%">
 				<tr>
 					<td class="patientTable">Salvador Orozco</td>

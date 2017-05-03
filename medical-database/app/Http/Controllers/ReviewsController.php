@@ -24,6 +24,9 @@ class ReviewsController extends Controller
     				->select('doctors.id')
     				->first();
 
+    	if($doctor == null)
+    		return view('LoggedInSearch');
+
     	$patient_id = Auth::id();
     	$date = Carbon::now()->toDateString();
 
