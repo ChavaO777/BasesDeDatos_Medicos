@@ -54,11 +54,11 @@
 
 			@forelse($total_doctor_reviews as $review)
 
-					<table style="width: 80%">
+					<table style="width: 85%">
 					<tr>
-						<td class="patientTable">{{ $review->first_name }} {{ $review->last_name }}</td>
-						<td class="patientTable">{{ $review->date }}</td>
-						<td class="patientTable">{{ $review->rating }}</td>
+						<td class="patientTable">Paciente: {{ $review->first_name }} {{ $review->last_name }}</td>
+						<td class="patientTable">Fecha: {{ $review->date }}</td>
+						<td class="patientTable">Calificación: {{ $review->rating }}</td>
 					</table>
 
 					<div class="reviewDiv">
