@@ -41,6 +41,8 @@ Route::post('/results_hospitals', 'SearchController@searchHospitals');
 
 Route::post('/results_doctors', 'SearchController@searchDoctors');
 
+Route::get('/logged_home', 'LoggedInController@index');
+
 //Search Routes
 
 Route::get('/search_doctor', "SearchDoctorController@index");
