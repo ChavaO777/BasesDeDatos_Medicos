@@ -50,7 +50,10 @@ Paciente
 		<br>
 		<br>
 		<br>
+		
 		{{ Form::submit('Registrar') }}
+
+		<!-- <center><FORM METHOD="LINK" ACTION="./home"> <INPUT TYPE="submit" VALUE="Registrar"> </FORM></ceter> -->
 
 	{{ Form::close() }}
 

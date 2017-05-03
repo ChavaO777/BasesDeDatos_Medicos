@@ -9,16 +9,7 @@ use Illuminate\Http\Request;
 
 class DoctorController extends Controller
 {		
-	/**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-
+	
     public function show(){
 
         $doctor_id = $_POST['doctor_id'];
@@ -29,7 +20,5 @@ class DoctorController extends Controller
 		$doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
 
 		return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty]);
-
-        //return view('search_results');
     }
 }
