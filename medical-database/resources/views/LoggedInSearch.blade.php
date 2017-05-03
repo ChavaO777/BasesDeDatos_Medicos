@@ -21,6 +21,27 @@
 </div>
 
 <div class="box2">
+    Opciones
+</div>
+
+<div class="box3"><center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- {!! Form::open(array('action' => 'SearchController@searchDoctors')) !!} -->
+        {{ Form::submit('Ver mi perfil') }}
+        {{ Form::submit('Escribir reseña') }}
+        {{ Form::submit('Configuraciones') }}
+
+    <!-- {{ Form::close() }} -->
+    <br>
+    <br>
+    <br>
+    <br>
+</center></div>
+
+<div class="box2">
     Realizar una b&uacute;squeda
 </div>
 
