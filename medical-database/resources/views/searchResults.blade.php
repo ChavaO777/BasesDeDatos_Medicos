@@ -24,7 +24,8 @@
 				<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
 
 				<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
-				{{ Form::submit('Ver perfil')}}
+				<!-- {{ Form::submit('Ver perfil')}} -->
+				<a href=route(["doctor.show", $doctor->id])>Ver perfil</a>
 				</p></h2>
 
 			@empty
