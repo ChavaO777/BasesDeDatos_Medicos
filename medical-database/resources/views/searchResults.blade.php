@@ -10,6 +10,7 @@
 <div class="box2">Resultados de tu b&uacute;squeda</div>
 
 <div class="box3">
+	<br>
 	<center>
 
 	@if($flag == 1)
@@ -23,12 +24,13 @@
 				
 				<p> {{ $doctor->id }}</p>
 
-				<p> {{$doctor -> first_name}} {{$doctor -> last_name}}
-				{{ Form::submit('Ver perfil')}}
-				</p>
+				<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
+				<!-- {{ Form::submit('Ver perfil')}} -->
+				<a href=route(["doctor.show", $doctor->id])>Ver perfil</a>
+				</p></h2>
 
 			@empty
-				<p>No se encontro ningun resultado</p>
+				<p><h3>No se encontro ningun resultado</h3></p>
 
 			@endforelse
 
@@ -42,12 +44,12 @@
 
 				<p class="hide">{{ Form::number('hospital_id', $hospital -> id)}}</p>
 
-				<p> {{$hospital -> name}}
+				<p><h2> {{$hospital -> name}}
 				{{ Form::submit('Ver perfil')}}
-				</p>
+				</p></h2>
 			
 			@empty
-				<p>No se encontro ningun resultado</p>
+				<p><h3>No se encontro ningun resultado</h3></p>
 
 			@endforelse
 

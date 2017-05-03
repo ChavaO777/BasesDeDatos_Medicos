@@ -8,15 +8,10 @@
     <br>
 </center></div>
 
-<div class="box2"><center>
-    Paciente
-</center></div>
 
 <div class="box3"><center>
     <br>
     <br>
-    <br>
-    <img src="pildora.png">
     <br>
     <br>
     <div class="panel-body">
@@ -27,7 +22,7 @@
                     <label for="email" class="col-md-4 control-label"><h2>Correo electr&oacute;nico</h2></label>
 
                      <div class="col-md-6">
-                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus placeholder="example@example.com">
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus placeholder="usuario/cédula@mail.com">
 
                         @if ($errors->has('email'))
                             <span class="help-block">
@@ -63,7 +58,7 @@
 
                 <div class="form-group">
                     <div class="col-md-8 col-md-offset-4">
-                        <button type="submit" class="btn btn-primary" class="button1"><h2>
+                        <button type="submit" class="btn btn-primary" class="button2"><h2>
                             Ingresar
                         </h2></button>
 

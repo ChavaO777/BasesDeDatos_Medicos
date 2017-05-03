@@ -114,6 +114,20 @@
 	background-color: #EBEBEB;
 }
 
+[type="email"] {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 120%;
+	color: #D90404;
+	width: 30%;
+
+	border-radius: 80px;
+	border-color: #2A948D;
+	border: 1px;
+	text-align: center;
+	background-color: #EBEBEB;
+}
+
 [type="password"]{
 	font-family: 'Dosis', sans-serif;
 	font-size: 120%;
