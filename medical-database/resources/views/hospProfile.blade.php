@@ -56,6 +56,4 @@ Perfil del hospital
 			@endforelse
 
 		</div>
-
-		<center><button class="button1">Iniciar sesi&oacute;n</button></center>
 	@stop
