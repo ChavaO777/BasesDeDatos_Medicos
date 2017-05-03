@@ -35,8 +35,8 @@
     {{ Form::close() }}
 
         {{ Form::submit('Escribir reseña') }}
-        {{ Form::submit('Configuraciones') }}
-
+        {{ Form::submit('Cerrar sesión') }}
+ 
     <br>
     <br>
     <br>

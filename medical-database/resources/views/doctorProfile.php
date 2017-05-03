@@ -13,11 +13,11 @@
 	{{ Form::submit('Ver mi perfil') }}
     {{ Form::submit('Ver reseñas') }}
     {{ Form::submit('Buscar') }}
-    {{ Form::submit('Configuraciones') }}
+    {{ Form::submit('Cerrar sesión') }}
     <br>
     <br>
 </div>
 
 <div class="box3">
-
+	Texto con la infomaci&oacute;n correspondiente
 </div>
