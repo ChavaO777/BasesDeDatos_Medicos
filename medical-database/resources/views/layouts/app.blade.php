@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+        <title>
+            @yield('view_title')
+        </title>
         <link rel="stylesheet" href="/css/app.css">
 
         <!-- Subtitle typography -->

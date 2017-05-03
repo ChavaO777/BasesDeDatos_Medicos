@@ -58,7 +58,7 @@ class PatientRegisterController extends Controller
                 'remember_token' => $password,
             ]);
 
-        return Redirect::back();
+        return redirect('/');
     }
 
     public function index(){

@@ -1,23 +1,18 @@
 @extends('layouts.app')
-
-@section('content')
-
 <html>
-    
-    <head>
-        <title>Busca Doctores</title>
 
-    </head>
+    @section('view_title')
+        Busca doctores
+    @stop
 
-    <body>
+    @section('content')
+
         <br>
         <br>
 
-        <div class="boxed">
-            <h1><center>Busca doctores</h1></center>
-
+        <div>
+            <h1>Busca doctores</h1>
             <br>
-
         </div>
 
         <br>
@@ -34,7 +29,7 @@
                 <br>
                 <br>
                
-                {{ Form::text('search_text','Ingrese su búsqueda',array('id'=>'3','class'=>'placeholder')) }}
+                {{ Form::text('search_text','',array('placeholder'=>'Ingrese su búsqueda')) }}
                 <br>
                 <br>
                 <br>
@@ -58,6 +53,6 @@
         <br>
         <br>
 
-    </body>
+    @stop
 
 </html>

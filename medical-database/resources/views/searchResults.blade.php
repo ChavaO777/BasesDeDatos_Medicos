@@ -21,14 +21,14 @@
 
 					<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
 					
-					<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
+					<p><h2> {{ $doctor -> first_name }} {{ $doctor -> last_name }}
 					{{ Form::submit('Ver perfil')}}
-					</p></h2>
+				</h2></p>
 
 				{{ Form::close() }}
 
 			@empty
-				<p><h3>No se encontro ningun resultado</h3></p>
+				<p><h3>No se encontró ningún resultado</h3></p>
 
 			@endforelse
 
@@ -42,12 +42,12 @@
 
 				<p><h2> {{$hospital -> name}}
 				{{ Form::submit('Ver perfil')}}
-				</p></h2>
+				</h2></p>
 
 				{{ Form::close() }}
 			
 			@empty
-				<p><h3>No se encontro ningun resultado</h3></p>
+				<p><h3>No se encontró ningún resultado</h3></p>
 
 			@endforelse
 

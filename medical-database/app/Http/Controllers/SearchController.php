@@ -7,6 +7,9 @@ use DB;
 
 class SearchController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function searchDoctors(){
 
 		$selectedCriteria = $_POST['option'];
@@ -24,8 +27,7 @@ class SearchController extends Controller
 				$total_doctors = DB::table('doctors')->
 							where('doctors.specialty_id', '=', $specialty->id)->get();
 			}else{
-				$total_doctors = DB::table('doctors')->
-							where('doctors.specialty_id', '=', -1)->get();
+				$total_doctors = null;
 			}
 		}
 
