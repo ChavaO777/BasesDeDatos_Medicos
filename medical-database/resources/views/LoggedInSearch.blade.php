@@ -29,12 +29,14 @@
     <br>
     <br>
     <br>
-    <!-- {!! Form::open(array('action' => 'SearchController@searchDoctors')) !!} -->
+    
+    {!! Form::open(array('action' => 'PatientProfileController@myProfile')) !!}
         {{ Form::submit('Ver mi perfil') }}
+    {{ Form::close() }}
+
         {{ Form::submit('Escribir reseña') }}
         {{ Form::submit('Configuraciones') }}
 
-    <!-- {{ Form::close() }} -->
     <br>
     <br>
     <br>
