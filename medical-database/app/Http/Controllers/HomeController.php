@@ -31,4 +31,9 @@ class HomeController extends Controller
         else
             return view('LoggedInSearch');
     }
+
+    public function writeReview(){
+
+        return view('writeReview');
+    }
 }

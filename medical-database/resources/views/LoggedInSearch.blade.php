@@ -30,7 +30,13 @@
     <br>
     <br>
 
-        {{ Form::submit('Escribir reseña') }}
+        {!! Form::open(array('action' => 'HomeController@writeReview')) !!}
+            
+            {{ Form::submit('Escribir reseña') }}
+
+        {{ Form::close() }}
+
+
         {{ Form::submit('Cerrar sesión') }}
  
     <br>

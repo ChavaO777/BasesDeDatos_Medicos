@@ -53,3 +53,7 @@ Route::post('/register_doctor', 'DoctorRegisterController@create');
 
 Route::post('/register_patient', 'PatientRegisterController@create');
 
+//Write review routes
+
+Route::post('/write_review', 'HomeController@writeReview');
+Route::post('/save_review', 'ReviewsController@create');
