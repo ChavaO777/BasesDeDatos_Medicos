@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Carbon\Carbon;
 use DB;
+use Hash;
 
 class PatientRegisterController extends Controller
 {
@@ -40,8 +41,6 @@ class PatientRegisterController extends Controller
 
         $age = $dt->diffInYears($dateNow);
         
-
-
         DB::table('patients')->insert(['user_name'=>$user,
                                     'first_name'=>$name, 
                                     'last_name'=>$lastname,
@@ -49,6 +48,15 @@ class PatientRegisterController extends Controller
                                     'birthdate'=>$birthdate,
                                     'age'=> $age]
         );
+
+        $hashed_password = Hash::make($password);
+
+        DB::table('users')->insert([
+                'name' => ($name . ' ' . $lastname),
+                'email' => $user . '@mail.com',
+                'password' => $hashed_password,
+                'remember_token' => $password,
+            ]);
 
         return Redirect::back();
     }
