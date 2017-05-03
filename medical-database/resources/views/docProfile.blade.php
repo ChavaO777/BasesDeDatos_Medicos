@@ -52,28 +52,23 @@
 			<br>
 			<h2>Rese&ntilde;as</h2>
 
-			
+			@forelse($total_doctor_reviews as $review)
 
+					<table style="width: 80%">
+					<tr>
+						<td class="patientTable">{{ $review->first_name }} {{ $review->last_name }}</td>
+						<td class="patientTable">{{ $review->date }}</td>
+						<td class="patientTable">{{ $review->rating }}</td>
+					</table>
 
-			<table style="width: 80%">
-				<tr>
-					<td class="patientTable">Salvador Orozco</td>
-					<td class="patientTable">Hace 4 horas</td>
-			</table>
-			<div class="reviewDiv">
-				Me pareci&oacute; una consulta excelente, a pesar de que el doctor lleg&oacute; tarde.
-			</div>
-			<br>
-			<br>
-			<table style="width: 80%">
-				<tr>
-					<td class="patientTable">Francisco Mendoza</td>
-					<td class="patientTable">Hace 5 horas</td>
-			</table>
-			<div class="reviewDiv">
-				No me gust&oacute; el trato que tuvo conmigo, ya que fue irrespetuoso y abusivo.
-			</div>
+					<div class="reviewDiv">
+						{{ $review->text }}
+					</div>
 
+			@empty
+				<p><h3><center>Este doctor no tiene reseñas.</center></h3></p>
+
+			@endforelse
 		</div>
 
 		<center><button class="button1">Iniciar sesi&oacute;n</button></center>

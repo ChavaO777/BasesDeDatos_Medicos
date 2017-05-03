@@ -16,7 +16,9 @@ class DoctorController extends Controller
 
 		$doctor = Doctor::where('id', $doctor_id)->firstOrFail(); 
 		
-        $total_doctor_reviews = Review::where('doctor_id', $doctor_id);
+        $total_doctor_reviews = Review::where('doctor_id', $doctor_id)
+        						->join('patients', 'reviews.patient_id', '=', 'patients.id')
+        						->select('patients.first_name', 'patients.last_name', 'reviews.text', 'reviews.rating', 'reviews.date')->get();
 			
 		$doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
 
