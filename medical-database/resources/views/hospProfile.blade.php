@@ -40,10 +40,22 @@
 			<br>
 			<h2>Doctores</h2>
 
-			@foreach($total_doctors as $doctor)
+			@forelse($total_doctors as $doctor)
 
-			<button class="docProfile"> Dr(a). {{ $doctor->first_name }} {{ $doctor->last_name }}  </button>
-			@endforeach
+				{!! Form::open(array('action' => 'DoctorController@show')) !!}
+
+					<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
+					
+					<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
+					{{ Form::submit('Ver perfil')}}
+					</p></h2>
+
+				{{ Form::close() }}
+
+			@empty
+				<p><h3>No hay doctores registrados en este hospital</h3></p>
+
+			@endforelse
 
 		</div>
 
