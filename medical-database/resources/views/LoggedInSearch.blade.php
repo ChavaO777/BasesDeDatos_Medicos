@@ -29,10 +29,6 @@
     <br>
     <br>
     <br>
-    
-    {!! Form::open(array('action' => 'PatientProfileController@myProfile')) !!}
-        {{ Form::submit('Ver mi perfil') }}
-    {{ Form::close() }}
 
         {{ Form::submit('Escribir reseña') }}
         {{ Form::submit('Cerrar sesión') }}
