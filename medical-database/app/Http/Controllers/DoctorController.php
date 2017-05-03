@@ -22,6 +22,8 @@ class DoctorController extends Controller
 			
 		$doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
 
-		return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty]);
+		$current_user_id = Auth::id();
+
+		return view('docProfile', ['doctor' => $doctor , 'total_doctor_reviews' => $total_doctor_reviews, 'specialty' => $doctor_specialty, 'current_user_id' => $current_user_id]);
     }
 }
