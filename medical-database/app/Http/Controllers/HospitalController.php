@@ -22,7 +22,8 @@ class HospitalController extends Controller
 			->join('doctors_offices', 'offices.id', '=', 'doctors_offices.id')
 			->join('doctors', 'doctors.id', '=', 'doctors_offices.id')
 			->join('addresses', 'addresses.id', '=', 'offices.address_id')
-			->select('doctors.first_name', 'doctors.last_name', 'addresses.id')
+			->join('specialties', 'specialties.id', '=', 'doctors.specialty_id')
+			->select('doctors.first_name', 'doctors.last_name', 'addresses.id', 'specialties.name')
 			->get();
 
 		$address = DB::table('hospitals')

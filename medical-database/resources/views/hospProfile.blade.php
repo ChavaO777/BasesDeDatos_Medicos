@@ -46,7 +46,7 @@
 
 					<p class="hide">{{ Form::number('doctor_id', $doctor -> id)}}</p>
 					
-					<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}}
+					<p><h2> {{$doctor -> first_name}} {{$doctor -> last_name}} ({{ $doctor -> name}})
 					{{ Form::submit('Ver perfil')}}
 					</p></h2>
 
