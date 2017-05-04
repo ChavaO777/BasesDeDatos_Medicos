@@ -35,19 +35,31 @@ class DoctorRegisterController extends Controller
     	$medical_id = $_POST['medical_id'];
     	$specialty = $_POST['specialty'];
 
+    	DB::beginTransaction();
     	$specialty = DB::table('specialties')->
     		where('name', '=', $specialty)->select('id')->first();
-    	
+
+    	if($specialty == null) {
+            DB::rollback();
+            return Redirect::back();
+        }
+
     	$password = $_POST['password'];
     	$consultation_cost = $_POST['consultation_cost'];
 
-    	DB::table('doctors')->insert(['first_name'=>$name, 
-									'last_name'=>$lastname,
-									'medical_id'=>$medical_id,
-									'specialty_id'=>$specialty->id,
-									'password'=>$password,
-									'consultation_cost' => $consultation_cost]
-    	);
+    	try{
+            DB::table('doctors')->insert(['first_name'=>$name,
+                    'last_name'=>$lastname,
+                    'medical_id'=>$medical_id,
+                    'specialty_id'=>$specialty->id,
+                    'password'=>$password,
+                    'consultation_cost' => $consultation_cost]
+            );
+        }
+        catch(\Exception $e) {
+    	    DB::rollback();
+            return Redirect::back();
+        }
         
         $hashed_password = Hash::make($password);
 
@@ -57,8 +69,9 @@ class DoctorRegisterController extends Controller
                 'password' => $hashed_password,
                 'remember_token' => $password,
             ]);
+        DB::commit();
 
-    	return Redirect::back();
+    	return view('auth.login');
     }
 
     public function index(){

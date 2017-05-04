@@ -21,7 +21,7 @@
 		<div class="titleBox">
 			<br>
 			<h1>Dr(a). {{ $doctor->first_name }} {{ $doctor->last_name }}</h1>
-			<center><img src="estrellas.png" width="250"></center>
+			<center><img src="Bata.png" width="250"></center>
 			<br>
 			<br>
 		</div>

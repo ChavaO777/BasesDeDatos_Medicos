@@ -65,6 +65,9 @@
                         <h2><a class="btn btn-link" href="{{ route('password.request') }}">
                             ¿Olvidaste tu contrase&ntilde;a?
                         </h2></a>
+                        <h2><a class="btn btn-link" href="/suscribeOpt">
+                                Registrarse
+                        </h2></a>
         <br>
     </div>
 
