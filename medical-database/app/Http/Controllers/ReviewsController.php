@@ -67,7 +67,7 @@ class ReviewsController extends Controller
 
     public function approve(){
 
-    	$review_id = $_POST['review_id'];
+    	$review_id = $_POST['review_id']
 
     	DB::table('reviews')
     		->where('reviews.id', $review_id)

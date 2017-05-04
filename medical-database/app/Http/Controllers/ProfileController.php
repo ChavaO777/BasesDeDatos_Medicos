@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use DB;
 
 class ProfileController extends Controller
 {
@@ -22,13 +24,13 @@ class ProfileController extends Controller
         $doctor_medical_id = $ans[0];
 
 
-        $doctor = Doctor::where('medical_id', $doctor_medical_id)->firstOrFail();
+        $doctor = DB::table('doctors')->where('medical_id', $doctor_medical_id)->first();
 
-        $total_doctor_reviews = Review::where('medical_id', $doctor_medical_id)
+        $total_doctor_reviews = DB::table('reviews')->where('doctor_id', $doctor->id)
             ->join('patients', 'reviews.patient_id', '=', 'patients.id')
             ->select('patients.first_name', 'patients.last_name', 'reviews.text', 'reviews.rating', 'reviews.date', 'reviews.approval', 'reviews.id')->get();
 
-        $doctor_specialty = Specialty::where('id', $doctor->specialty_id)->firstOrFail();
+        $doctor_specialty = DB::table('specialties')->where('id', $doctor->specialty_id)->first();
 
         $current_user_id = Auth::id();
         $doctor_medical_id = $doctor->medical_id;

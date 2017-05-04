@@ -62,3 +62,7 @@ Route::post('/save_review', 'ReviewsController@create');
 
 Route::post('/approve_review', 'ReviewsController@approve');
 Route::post('/reject_review', 'ReviewsController@reject');
+
+//My profile (doctor)
+
+Route::post('/my_profile', 'ProfileController@my_profile');

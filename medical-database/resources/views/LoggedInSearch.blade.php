@@ -66,9 +66,11 @@
 <div class="box3">
 
     <br>
-    {{ Form::open(array(('action' => 'ProfileController@my_profile'))) }}
+    <center>
+    {!! Form::open(array('action' => 'ProfileController@my_profile')) !!}
     {{ Form::submit('Mi perfil') }}
     {{ Form::close() }}
+    </center>
     <br>
     <br>
     <br>
