@@ -32,8 +32,13 @@ class ReviewsController extends Controller
     				->select('doctors.id')
     				->first();
 
-    	if($doctor == null)
+    	DB::beginTransaction();
+
+    	if($doctor == null){
+
+    		DB::rollBack();
     		return view('LoggedInSearch');
+    	}
 
     	$user_id = Auth::id();
 
@@ -61,13 +66,15 @@ class ReviewsController extends Controller
             	'consultation_cost' => $consultation_cost
             ]); 
 
+    	DB::commit();
+
     	return view('LoggedInSearch');
     	// return Redirect::back();
     }
 
     public function approve(){
 
-    	$review_id = $_POST['review_id']
+    	$review_id = $_POST['review_id'];
 
     	DB::table('reviews')
     		->where('reviews.id', $review_id)
