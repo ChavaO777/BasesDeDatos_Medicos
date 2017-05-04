@@ -59,3 +59,18 @@
     <br>
     <br>
 </div>
+<div class="box2">
+    Perfil
+</div>
+
+<div class="box3">
+
+    <br>
+    {{ Form::open(array(('action' => 'ProfileController@my_profile'))) }}
+    {{ Form::submit('Mi perfil') }}
+    {{ Form::close() }}
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
