@@ -1,7 +1,11 @@
-<html>
+@extends('layouts.app')
+@section('title')
+	
+	Dr(a). {{ $doctor->first_name }} {{ $doctor->last_name }}
+	
+@stop
 
 	<head>
-		<title>B&uacute;squeda de doctor</title>
 		<link rel="stylesheet" href="/css/docStyles.css">
 		
 		<!-- Title font -->
@@ -11,7 +15,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	</head>
 
-	<body>
+	@section('content')
+
 		<br>
 		<div class="titleBox">
 			<br>
@@ -54,21 +59,59 @@
 
 			@forelse($total_doctor_reviews as $review)
 
-					<table style="width: 85%">
-					<tr>
-						<td class="patientTable">Paciente: {{ $review->first_name }} {{ $review->last_name }}</td>
-						<td class="patientTable">Fecha: {{ $review->date }}</td>
-						<td class="patientTable">Calificación: {{ $review->rating }}</td>
-					</table>
+					@if($review->approval == 1)
 
-					<div class="reviewDiv">
-						{{ $review->text }}
-					</div>
+						<table style="width: 85%">
+						<tr>
+							<td class="patientTable">Paciente: {{ $review->first_name }} {{ $review->last_name }}</td>
+							<td class="patientTable">Fecha: {{ $review->date }}</td>
+							<td class="patientTable">Calificación: {{ $review->rating }}</td>
+						</table>
+
+						<div class="reviewDiv">
+							{{ $review->text }}
+						</div>
+					@elseif($review->approval == 0)
+
+						<table style="width: 85%">
+						<tr>
+							<td class="patientTable">Paciente: {{ $review->first_name }} {{ $review->last_name }}</td>
+							<td class="patientTable">Fecha: {{ $review->date }}</td> 
+						</table>
+
+						<div class="reviewDiv">
+							<p><h3><center>Reseña esperando aprobación del médico.</center></h3></p>
+						</div>
+
+						@if($isThisDoctor == 1)
+
+								<center>
+
+									{{ Form::open(array('action' => 'ReviewsController@approve')) }}
+
+										<p class="hide">{{ Form::number('review_id', $review -> id)}}</p>
+
+									{{ Form::submit('Aprobar') }}
+
+									{{ Form::close() }}
+
+									{{ Form::open(array('action' => 'ReviewsController@reject')) }}
+
+										<p class="hide">{{ Form::number('review_id', $review -> id)}}</p>
+
+									{{ Form::submit('Rechazar') }}
+
+									{{ Form::close() }}
+
+								</center>
+
+						@endif
+					
+					@endif
 
 			@empty
 				<p><h3><center>Este doctor no tiene reseñas.</center></h3></p>
 
 			@endforelse
 		</div>
-	</body>
-</html>
+	@stop

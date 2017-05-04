@@ -15,13 +15,22 @@ class UsersTableSeeder extends Seeder
     {
         if(env('APP_ENV') != 'production')
         {
-            $password = Hash::make('secret');
+            // $password = Hash::make('secret');
             
+            // DB::table('users')->insert([
+            // 	'name' => 'Juanito',
+            // 	'email' => 'juanito@app.com',
+            // 	'password' => $password,
+            // 	'remember_token' => 'secret',
+            // ]);
+
+            $password = Hash::make('hola123');
+
             DB::table('users')->insert([
-            	'name' => 'Juanito',
-            	'email' => 'juanito@app.com',
-            	'password' => $password,
-            	'remember_token' => 'secret',
+                'name' => 'Mauricio Romero',
+                'email' => '9866983@mail.com',
+                'password' => $password,
+                'remember_token' => 'hola123',
             ]);
         }
     }
